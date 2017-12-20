@@ -9,5 +9,8 @@ public class TheVoid {
         Void v = constructor.newInstance();
 
         System.out.println(v);
+
+        Void v2 = constructor.newInstance();
+        System.out.println(v.equals(v2));
     }
 }
