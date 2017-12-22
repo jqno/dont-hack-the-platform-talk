@@ -1,21 +1,13 @@
 package nl.jqno.talks.donthacktheplatform.demo3;
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
-
 public class UnicodeSymbols2 {
 
-    private static int Z̗̹͎͚̊̈͋̄͆͆̒͠Á̳̞̻͚̌̃ͪ̈́͋̾͝L͙͔̼̗̭͖̇̔͊͛ͪ͠G̲̦̭̘͕̍ͫͨ̌̀ͤͬ̐͟Ô͕͓͍̓͢ = -1;
+    private static final int Z̗̹͎͚̊̈͋̄͆͆̒͠Á̳̞̻͚̌̃ͪ̈́͋̾͝L͙͔̼̗̭͖̇̔͊͛ͪ͠G̲̦̭̘͕̍ͫͨ̌̀ͤͬ̐͟Ô͕͓͍̓͢ = -1;
 
-    @Test
-    public void he_is_coming() {
-        assertEquals(-1, Z̗̹͎͚̊̈͋̄͆͆̒͠Á̳̞̻͚̌̃ͪ̈́͋̾͝L͙͔̼̗̭͖̇̔͊͛ͪ͠G̲̦̭̘͕̍ͫͨ̌̀ͤͬ̐͟Ô͕͓͍̓͢);
-    }
+    public static void main(String... args) throws Exception {
+        System.out.println(Z̗̹͎͚̊̈͋̄͆͆̒͠Á̳̞̻͚̌̃ͪ̈́͋̾͝L͙͔̼̗̭͖̇̔͊͛ͪ͠G̲̦̭̘͕̍ͫͨ̌̀ͤͬ̐͟Ô͕͓͍̓͢);
 
-    @Test
-    public void he_is_upon_us() throws Exception {
-        String fieldName = getClass().getDeclaredField("Z̗̹͎͚̊̈͋̄͆͆̒͠Á̳̞̻͚̌̃ͪ̈́͋̾͝L͙͔̼̗̭͖̇̔͊͛ͪ͠G̲̦̭̘͕̍ͫͨ̌̀ͤͬ̐͟Ô͕͓͍̓͢").getName();
-        assertEquals("Z̗̹͎͚̊̈͋̄͆͆̒͠Á̳̞̻͚̌̃ͪ̈́͋̾͝L͙͔̼̗̭͖̇̔͊͛ͪ͠G̲̦̭̘͕̍ͫͨ̌̀ͤͬ̐͟Ô͕͓͍̓͢", fieldName);
+        String fieldName = UnicodeSymbols2.class.getDeclaredField("Z̗̹͎͚̊̈͋̄͆͆̒͠Á̳̞̻͚̌̃ͪ̈́͋̾͝L͙͔̼̗̭͖̇̔͊͛ͪ͠G̲̦̭̘͕̍ͫͨ̌̀ͤͬ̐͟Ô͕͓͍̓͢").getName();
+        System.out.println(fieldName);
     }
 }
