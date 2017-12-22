@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo3;
+package nl.jqno.talks.donthacktheplatform.demo4;
 
 public class UnicodeSymbols2 {
 

@@ -1,6 +1,6 @@
-package nl.jqno.talks.donthacktheplatform.demo5;
+package nl.jqno.talks.donthacktheplatform.demo6;
 
-import nl.jqno.talks.donthacktheplatform.demo5.helper.ConditionalCompiler;
+import nl.jqno.talks.donthacktheplatform.demo6.helper.ConditionalCompiler;
 
 import java.io.File;
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo5.helper;
+package nl.jqno.talks.donthacktheplatform.demo6.helper;
 
 import javax.tools.*;
 import javax.tools.JavaCompiler.CompilationTask;

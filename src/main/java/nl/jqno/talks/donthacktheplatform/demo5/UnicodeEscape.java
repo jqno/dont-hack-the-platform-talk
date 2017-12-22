@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo4;
+package nl.jqno.talks.donthacktheplatform.demo5;
 
 import static org.junit.Assert.assertEquals;
 

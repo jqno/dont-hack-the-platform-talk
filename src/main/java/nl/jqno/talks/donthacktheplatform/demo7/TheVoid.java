@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo6;
+package nl.jqno.talks.donthacktheplatform.demo7;
 
 import java.lang.reflect.Constructor;
 
