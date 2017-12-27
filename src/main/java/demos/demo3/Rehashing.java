@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo3;
+package demos.demo3;
 
 public class Rehashing {
     public static void main(String... args) {

@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo4;
+package demos.demo1;
 
 import java.util.List;
 import java.util.function.Consumer;

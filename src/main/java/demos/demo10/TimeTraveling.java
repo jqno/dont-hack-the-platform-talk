@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo10;
+package demos.demo10;
 
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.agent.ByteBuddyAgent;

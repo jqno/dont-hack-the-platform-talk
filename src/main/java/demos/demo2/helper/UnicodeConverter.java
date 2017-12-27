@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo5.helper;
+package demos.demo2.helper;
 
 import java.util.List;
 import java.util.stream.Collectors;

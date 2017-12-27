@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo8;
+package demos.demo8;
 
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;

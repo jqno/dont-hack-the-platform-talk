@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo6;
+package demos.demo6;
 
 import javax.tools.*;
 import java.io.Closeable;

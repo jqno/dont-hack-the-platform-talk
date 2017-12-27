@@ -1,4 +1,4 @@
-package nl.jqno.talks.donthacktheplatform.demo1;
+package demos.demo4;
 
 import java.lang.reflect.Field;
 
