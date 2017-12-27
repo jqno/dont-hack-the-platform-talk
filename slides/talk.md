@@ -8,9 +8,11 @@ theme: a-league-of-my-own
 
 ## About me
 
-@[jqno](https://twitter.com/jqno)
+![](images/codestar.png)
 
-![](codestar.png)
+EqualsVerifier
+
+@[jqno](https://twitter.com/jqno)
 
 ## About this talk
 
