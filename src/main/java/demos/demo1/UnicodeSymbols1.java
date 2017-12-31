@@ -8,11 +8,11 @@ import static org.junit.Assert.assertTrue;
 
 public class UnicodeSymbols1 {
     public static void main(String... args) {
-        true_lambda();
+        trueLambda();
         physics();
     }
 
-    private static void true_lambda() {
+    private static void trueLambda() {
         List<Integer> ints = List.of(1, 2, 3);
 
         Consumer<Integer> λ = i -> System.out.println(i);
