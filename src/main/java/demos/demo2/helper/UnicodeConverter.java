@@ -15,8 +15,8 @@ public class UnicodeConverter {
         List<String> strings = PROGRAM.chars()
                 .mapToObj(UnicodeConverter::convertChar)
                 .collect(Collectors.toList());
+
         String output = String.join("", strings);
-        System.out.println(strings.size());
         System.out.println(output);
     }
 
