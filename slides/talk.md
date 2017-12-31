@@ -74,7 +74,7 @@ Evil consequences
 
 # Loopy
 
-Was this evil? ✋
+Was this mutability evil? ✋
 
 . . .
 
@@ -165,4 +165,7 @@ Are JPA entities evil? 👹
 But maybe not at work?
 
 # Questions?
+
+slides & code at<br>
+![](images/github.png)[/jqno/dont-hack-the-platform-talk](https://github.com/jqno/dont-hack-the-platform-talk)
 
