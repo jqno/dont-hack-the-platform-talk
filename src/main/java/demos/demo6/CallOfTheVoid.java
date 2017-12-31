@@ -1,8 +1,8 @@
-package demos.demo7;
+package demos.demo6;
 
 import java.lang.reflect.Constructor;
 
-public class TheVoid {
+public class CallOfTheVoid {
     public static void main(String... args) throws Exception {
         Constructor<Void> constructor = Void.class.getDeclaredConstructor();
         constructor.setAccessible(true);

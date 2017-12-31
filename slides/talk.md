@@ -66,17 +66,53 @@ Evil consequences
 ![](images/rtlnieuws.png)
 
 
-# Reflection and other libraries
+# Reflection
 
 # Loopy
 
+## Demo 4
+
+# Loopy
+
+Was this evil? ✋
+
+. . .
+
+Are Calendars and arrays evil? ✋
+
+. . .
+
+Are JPA entities evil? 👹
+
+
 # Interning
+
+## Demo 5
+
+# Interning
+
+* Fun way to mess up unit tests!
+
+
+# Call of the Void
+
+## Demo 6
+
 
 # Compiler
 
+## Demo 7
+
+# Compiler
+
+* `JavaCompiler` available since Java 6
+* Use Java 8 in Java 7 codebase
+
+
 # Libraries
 
-# The Void
+## Objenesis
+
 
 # Singleton
 
@@ -88,11 +124,39 @@ Evil consequences
 
 😇
 
+# Singleton
+
+## Demo 8
+
+
 # Confusing card game
 
-# Agents
+---
+
+![](images/tarot.jpg)
+
+# Confusing card game
+
+## Demo 9
+
+# Confusing card game
+
+* Cavalier between Jack and Queen
+
+
+# Libraries
+
+## ByteBuddy Agent
 
 # Time Traveling
+
+## Demo 10
+
+# Time Traveling
+
+* Unit testing legacy code
+* Messing up any code
+
 
 # Conclusion
 
