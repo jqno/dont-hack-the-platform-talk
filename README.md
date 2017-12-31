@@ -15,4 +15,5 @@ It's not done yet! Spoiler alert! Go away!
 | github.png | GitHub | [source](https://github.com/logos) |
 | rtlnieuws.png | RTL Nieuws, January 30th, 2017 | [source](https://www.rtlnieuws.nl/nederland/politiek/zo-werkt-het-softwaresysteem-dat-onze-stemmen-telt) (captured December 31st, 2017) |
 | tarot.jpg | me | - |
+| twitter.png | Twitter | [source](https://about.twitter.com/en_us/company/brand-resources.html) |
 

@@ -13,7 +13,7 @@ controls: "false"
 
 EqualsVerifier
 
-@[jqno](https://twitter.com/jqno)
+![](images/twitter.png) [jqno](https://twitter.com/jqno)
 
 
 # About this talk
