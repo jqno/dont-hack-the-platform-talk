@@ -4,9 +4,7 @@ title: Don't hack the platform? ☠️💣💥
 date: January 30, 2018
 theme: a-league-of-my-own
 ---
-# Introduction
-
-## About me
+# About me
 
 ![](images/codestar.png)
 
@@ -14,41 +12,41 @@ EqualsVerifier
 
 @[jqno](https://twitter.com/jqno)
 
-## About this talk
+# About this talk
 
 # Pure Java
 
-## Unicode symbols
+# Unicode symbols
 
-## Unicode
+# Unicode
 
-## Hash-code
+# Hash-code
 
 # Reflection and other libraries
 
-## Loopy
+# Loopy
 
-## Interning
+# Interning
 
-## Compiler
+# Compiler
 
 # Libraries
 
-## The Void
+# The Void
 
-## Singleton
+# Singleton
 
-## Confusing card game
+# Confusing card game
 
 # Agents
 
-## Time Traveling
+# Time Traveling
 
 # Conclusion
 
-## Do try this at home!
+# Do try this at home!
 
 But maybe not at work?
 
-## Questions?
+# Questions?
 

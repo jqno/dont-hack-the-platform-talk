@@ -1,2 +1,2 @@
 #!/bin/sh
-pandoc -t revealjs -s --slide-level 2 -o talk.html talk.md
+pandoc -t revealjs -s -o talk.html talk.md
