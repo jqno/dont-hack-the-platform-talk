@@ -18,6 +18,16 @@ EqualsVerifier
 
 # About this talk
 
+How to hack Java
+
+. . .
+
+How to hack a conference ☠️💣💥
+
+
+
+# About this talk
+
 ![](images/Bob_at_Easel.jpg)
 
 Happy accidents
