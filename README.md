@@ -15,6 +15,7 @@ It's not done yet! Spoiler alert! Go away!
 | dr-evil.jpg | New Line Cinema | [source](https://en.wikipedia.org/wiki/File:Drevil_million_dollars.jpg) |
 | github.png | GitHub | [source](https://github.com/logos) |
 | rtlnieuws.png | RTL Nieuws, January 30th, 2017 | [source](https://www.rtlnieuws.nl/nederland/politiek/zo-werkt-het-softwaresysteem-dat-onze-stemmen-telt) (captured December 31st, 2017) |
+| scala.png | Scala-Lang.org | [source](https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png) |
 | tarot.jpg | me | - |
 | twitter.png | Twitter | [source](https://about.twitter.com/en_us/company/brand-resources.html) |
 

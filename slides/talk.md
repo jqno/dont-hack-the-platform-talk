@@ -229,11 +229,11 @@ into doing things it shouldn't do
 * Rating: ☠️💣💥
 
 
-# Messing with Scala
+# Messing with Scala ![](images/scala.png)
 
 > Demo 11
 
-# Messing with Scala
+# Messing with Scala ![](images/scala.png)
 
 * Rating: ☠️💣
 
@@ -247,11 +247,11 @@ into doing things it shouldn't do
 `ByteBuddy Agent`
 
 
-# Time Traveling 🕙🕚🕛
+# Time Traveling 🕙🕚
 
 > Demo 12
 
-# Time Traveling 🕙🕚🕛
+# Time Traveling 🕙🕚
 
 * Unit testing legacy code
 * Messing up any code
