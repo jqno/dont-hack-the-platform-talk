@@ -45,6 +45,11 @@ Evil consequences
 - Annotations
 - External libraries
 
+# Ratings
+
+- ☠️
+- ☠️💣
+- ☠️💣💥
 
 # Pure Java
 
@@ -57,6 +62,7 @@ Evil consequences
 
 * Hard to type
 * Hard to read
+* Rating: ☠️
 
 
 # Unicode escapes
@@ -67,6 +73,7 @@ Evil consequences
 
 * Harder to type and read
 * Maven says ¯\\\_(ツ)\_/¯
+* Rating: ☠️💣
 
 
 # Hash-code
@@ -76,9 +83,12 @@ Evil consequences
 # Hash-code
 
 * Fun when coworkers insist on hashCode as key
+* Rating: ☠️
 
 . . .
 
+
+However...
 ![](images/rtlnieuws.png)
 
 
@@ -100,6 +110,10 @@ Evil consequences
 
 `--add-opens java.base/java.lang=ALL-UNNAMED`
 
+# Call of the Void
+
+* Rating: ☠️
+
 
 # Loopy
 
@@ -117,6 +131,10 @@ Are Calendars and arrays evil? ✋
 
 Are JPA entities evil? 👹
 
+# Loopy
+
+* Rating: ☠️💣
+
 
 # Interning
 
@@ -125,6 +143,7 @@ Are JPA entities evil? 👹
 # Interning
 
 * Fun way to mess up unit tests!
+* Rating: ☠️💣
 
 
 # Compiler
@@ -135,6 +154,7 @@ Are JPA entities evil? 👹
 
 * `JavaCompiler` available since Java 6
 * Use Java 8 in Java 7 codebase
+* Rating: ☠️💣
 
 
 # Annotations
@@ -157,6 +177,8 @@ into doing things it shouldn't do
 
 # Boring
 
+* Rating: ☠️
+
 ![](images/boring.jpg)
 
 
@@ -164,9 +186,13 @@ into doing things it shouldn't do
 
 `Objenesis`
 
-# Objenesis
+# Constructors are Boring
 
 > Demo 8
+
+# Constructors are Boring
+
+* Rating: ☠️
 
 
 # Singleton
@@ -183,6 +209,10 @@ into doing things it shouldn't do
 
 > Demo 9 
 
+# Singleton
+
+* Rating: ☠️💣
+
 
 # Confusing card game
 
@@ -194,10 +224,18 @@ into doing things it shouldn't do
 
 > Demo 10
 
+# Confusing card game
+
+* Rating: ☠️💣💥
+
 
 # Messing with Scala
 
 > Demo 11
+
+# Messing with Scala
+
+* Rating: ☠️💣
 
 
 # External libraries
@@ -217,6 +255,7 @@ into doing things it shouldn't do
 
 * Unit testing legacy code
 * Messing up any code
+* Rating: ☠️💣💥
 
 
 # Conclusion
