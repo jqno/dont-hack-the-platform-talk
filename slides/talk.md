@@ -22,12 +22,20 @@ EqualsVerifier
 
 Happy accidents
 
-
 # About this talk
 
 ![](images/dr-evil.jpg)
 
 Evil consequences
+
+# About this talk
+
+Things you can do RIGHT NOW:
+
+- Pure Java
+- Reflection
+- Annotations
+- External libraries
 
 
 # Pure Java
@@ -109,7 +117,30 @@ Are JPA entities evil? 👹
 * Use Java 8 in Java 7 codebase
 
 
-# Libraries
+# Annotations
+
+# Lombok
+
+uses annotations
+
+to trick the Java **compiler**
+
+into doing things it shouldn't do
+
+# Spring & Hibernate
+
+use annotations
+
+to trick the Java **runtime**
+
+into doing things it shouldn't do
+
+# Boring
+
+![](images/boring.jpg)
+
+
+# External libraries
 
 ## Objenesis
 
@@ -139,19 +170,18 @@ Are JPA entities evil? 👹
 
 ## Demo 9
 
-# Confusing card game
-
-* Cavalier between Jack and Queen
-
 
 # Messing with Scala
 
 ## Demo 10
 
 
-# Libraries
+# External libraries
 
+## ByteBuddy
+## &
 ## ByteBuddy Agent
+
 
 # Time Traveling
 
