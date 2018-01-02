@@ -43,7 +43,7 @@ Things you can do RIGHT NOW:
 
 # Unicode symbols
 
-## Demo 1
+> Demo 1
 
 # Unicode symbols
 
@@ -53,7 +53,7 @@ Things you can do RIGHT NOW:
 
 # Unicode escapes
 
-## Demo 2
+> Demo 2
 
 # Unicode escapes
 
@@ -63,7 +63,7 @@ Things you can do RIGHT NOW:
 
 # Hash-code
 
-## Demo 3
+> Demo 3
 
 # Hash-code
 
@@ -78,7 +78,7 @@ Things you can do RIGHT NOW:
 
 # Loopy
 
-## Demo 4
+> Demo 4
 
 # Loopy
 
@@ -95,7 +95,7 @@ Are JPA entities evil? 👹
 
 # Interning
 
-## Demo 5
+> Demo 5
 
 # Interning
 
@@ -104,12 +104,12 @@ Are JPA entities evil? 👹
 
 # Call of the Void
 
-## Demo 6
+> Demo 6
 
 
 # Compiler
 
-## Demo 7
+> Demo 7
 
 # Compiler
 
@@ -142,7 +142,7 @@ into doing things it shouldn't do
 
 # External libraries
 
-## Objenesis
+`Objenesis`
 
 
 # Singleton
@@ -157,7 +157,7 @@ into doing things it shouldn't do
 
 # Singleton
 
-## Demo 8
+> Demo 8
 
 
 # Confusing card game
@@ -168,24 +168,26 @@ into doing things it shouldn't do
 
 # Confusing card game
 
-## Demo 9
+> Demo 9
 
 
 # Messing with Scala
 
-## Demo 10
+> Demo 10
 
 
 # External libraries
 
-## ByteBuddy
-## &
-## ByteBuddy Agent
+`ByteBuddy`
+
+&
+
+`ByteBuddy Agent`
 
 
 # Time Traveling
 
-## Demo 11
+> Demo 11
 
 # Time Traveling
 
