@@ -76,9 +76,26 @@ Things you can do RIGHT NOW:
 
 # Reflection
 
+# Call of the Void
+
+> Demo 4 
+
+# Oh man 😒
+
+    WARNING: An illegal reflective access operation has occurred
+    WARNING: Illegal reflective access by demos.demo4.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
+    WARNING: Please consider reporting this to the maintainers of demos.demo4.CallOfTheVoid
+    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+    WARNING: All illegal access operations will be denied in a future release
+
+. . .
+
+`--add-opens java.base/java.lang=ALL-UNNAMED`
+
+
 # Loopy
 
-> Demo 4
+> Demo 5
 
 # Loopy
 
@@ -95,16 +112,11 @@ Are JPA entities evil? 👹
 
 # Interning
 
-> Demo 5
+> Demo 6
 
 # Interning
 
 * Fun way to mess up unit tests!
-
-
-# Call of the Void
-
-> Demo 6
 
 
 # Compiler
