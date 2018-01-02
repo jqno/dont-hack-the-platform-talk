@@ -2,7 +2,7 @@
 author: Jan Ouwens
 title: Don't hack the platform? ☠️💣💥
 date: January 30, 2018
-theme: a-league-of-my-own
+theme: a-new-moon
 transition: none
 progress: "false"
 controls: "false"
