@@ -139,7 +139,7 @@ Are JPA entities evil? 👹
 
 # Annotations
 
-# Lombok
+# Lombok 🌶
 
 uses annotations
 
