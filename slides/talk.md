@@ -7,7 +7,7 @@ transition: none
 progress: "false"
 controls: "false"
 ---
-# About me
+# About me 🤓
 
 ![](images/codestar.png)
 
@@ -28,9 +28,7 @@ Happy accidents
 
 Evil consequences
 
-# About this talk
-
-Things you can do RIGHT NOW:
+# Things you can do RIGHT NOW:
 
 - Pure Java
 - Reflection
@@ -135,7 +133,7 @@ Are JPA entities evil? 👹
 
 uses annotations
 
-to trick the Java **compiler**
+to trick the Java _**compiler**_
 
 into doing things it shouldn't do
 
@@ -143,7 +141,7 @@ into doing things it shouldn't do
 
 use annotations
 
-to trick the Java **runtime**
+to trick the Java _**runtime**_
 
 into doing things it shouldn't do
 
@@ -201,11 +199,11 @@ into doing things it shouldn't do
 `ByteBuddy Agent`
 
 
-# Time Traveling
+# Time Traveling 🕙🕚🕛
 
 > Demo 12
 
-# Time Traveling
+# Time Traveling 🕙🕚🕛
 
 * Unit testing legacy code
 * Messing up any code
