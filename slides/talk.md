@@ -186,11 +186,11 @@ into doing things it shouldn't do
 
 `Objenesis`
 
-# Constructors are Boring
+# Constructors are tedious
 
 > Demo 8
 
-# Constructors are Boring
+# Constructors are tedious
 
 * Rating: ☠️
 

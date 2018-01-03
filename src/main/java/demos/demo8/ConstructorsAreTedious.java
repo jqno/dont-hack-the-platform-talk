@@ -3,7 +3,7 @@ package demos.demo8;
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
 
-public class ConstructorsAreBoring {
+public class ConstructorsAreTedious {
 
     public static void main(String... args) {
         Objenesis OBJENESIS = new ObjenesisStd();
