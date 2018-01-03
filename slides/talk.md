@@ -6,6 +6,7 @@ theme: a-new-moon
 transition: none
 progress: "false"
 controls: "false"
+center: "false"
 ---
 # About me 🤓
 
