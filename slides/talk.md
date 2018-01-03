@@ -38,7 +38,7 @@ Happy accidents
 
 Evil consequences
 
-# Things you can do RIGHT NOW:
+# Things you shouldn't mess with RIGHT NOW:
 
 - Pure Java
 - Reflection
@@ -86,7 +86,6 @@ Evil consequences
 * Rating: ☠️
 
 . . .
-
 
 However...
 ![](images/rtlnieuws.png)
