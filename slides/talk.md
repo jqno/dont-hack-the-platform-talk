@@ -2,7 +2,7 @@
 author: Jan Ouwens
 title: Don't hack the platform? ☠️💣💥
 date: January 30, 2018
-theme: a-new-moon
+theme: moon
 transition: none
 progress: "false"
 controls: "false"
