@@ -19,6 +19,7 @@ public class ConstructorsAreTedious {
         public Point(String hello, int x) {
             this.hello = hello;
             this.x = x;
+            throw new IllegalStateException("ᕕ( ᐛ )ᕗ");
         }
 
         @Override

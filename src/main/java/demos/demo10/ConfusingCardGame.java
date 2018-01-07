@@ -18,12 +18,16 @@ public class ConfusingCardGame {
     }
 
     public static void main(String... args) throws Exception {
-        Arrays.stream(Suit.values()).forEach(System.out::println);
+        for (Suit s : Suit.values()) {
+            System.out.println(s);
+        }
 
         System.out.println("\nShuffle\n");
-
         addEnumConstant(Suit.class, "TRUMPS");
-        Arrays.stream(Suit.values()).forEach(System.out::println);
+
+        for (Suit s : Suit.values()) {
+            System.out.println(s);
+        }
     }
 
     private static <E extends Enum<?>> void addEnumConstant(Class<E> type, String constantName) throws Exception {

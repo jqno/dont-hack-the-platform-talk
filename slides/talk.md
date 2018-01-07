@@ -8,23 +8,26 @@ progress: "false"
 controls: "false"
 center: "false"
 ---
+# ಠ_ಠ
+
+::: notes
+
+What are you doing here?
+I told you not to come in my abstract
+
+Also: this is how you hack a conference
+
+:::
+
 # About me 🤓
+
+Jan Ouwens
 
 ![](images/codestar.png)
 
 EqualsVerifier
 
 ![](images/twitter.png) [jqno](https://twitter.com/jqno)
-
-
-# About this talk
-
-How to hack Java
-
-. . .
-
-How to hack a conference ☠️💣💥
-
 
 
 # About this talk
@@ -52,8 +55,8 @@ Evil consequences
 - ☠️💣
 - ☠️💣💥
 
-# Pure Java
 
+# ☠️ Pure Java
 
 # Unicode symbols
 
@@ -92,7 +95,7 @@ However...
 ![](images/rtlnieuws.png)
 
 
-# Reflection
+# ☠️ Reflection
 
 # Call of the Void
 
@@ -146,26 +149,33 @@ Are JPA entities evil? 👹
 * Rating: ☠️💣
 
 
-# Compiler
+# Avoiding Checkstyle
 
 > Demo 7
 
-# Compiler
+# Avoiding Checkstyle
+
+## Another use case
+
+Use Java 8 in Java 7 codebase
+
+# Avoiding Checkstyle
 
 * `JavaCompiler` available since Java 6
-* Use Java 8 in Java 7 codebase
 * Rating: ☠️💣
 
 
-# Annotations
+# ☠️ Annotations
 
 # Lombok 🌶
 
-uses annotations
+use annotations
 
 to trick the Java _**compiler**_
 
-into doing things it shouldn't do
+into generating bytecode
+
+that does something else
 
 # Spring & Hibernate
 
@@ -173,7 +183,9 @@ use annotations
 
 to trick the Java _**runtime**_
 
-into doing things it shouldn't do
+into generating bytecode
+
+that does something else
 
 # Boring
 
@@ -182,7 +194,7 @@ into doing things it shouldn't do
 ![](images/boring.jpg)
 
 
-# External libraries
+# ☠️ External libraries
 
 `Objenesis`
 
@@ -228,6 +240,7 @@ into doing things it shouldn't do
 
 * Rating: ☠️💣💥
 
+![](images/trump.jpg)
 
 # Messing with Scala ![](images/scala.png)
 
@@ -258,11 +271,13 @@ into doing things it shouldn't do
 * Rating: ☠️💣💥
 
 
-# Conclusion
+---
+
+![](images/thats-all-folks.png)
 
 # Do try this at home!
 
-But maybe not at work?
+Maybe not at work though?
 
 # Questions?
 

@@ -17,5 +17,7 @@ It's not done yet! Spoiler alert! Go away!
 | rtlnieuws.png | RTL Nieuws, January 30th, 2017 | [source](https://www.rtlnieuws.nl/nederland/politiek/zo-werkt-het-softwaresysteem-dat-onze-stemmen-telt) (captured December 31st, 2017) |
 | scala.png | Scala-Lang.org | [source](https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png) |
 | tarot.jpg | me | - |
+| thats-all-folks.png | Looney Tunes (but taken from Tech Crunch) | [source](https://techcrunch.com/2016/08/14/compost/) |
+| trump.jpg | couldn't find the original source | please let me know if you the original source |
 | twitter.png | Twitter | [source](https://about.twitter.com/en_us/company/brand-resources.html) |
 

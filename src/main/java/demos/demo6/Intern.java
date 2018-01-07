@@ -11,6 +11,6 @@ public class Intern {
         field.setAccessible(true);
         field.set(s, field.get("Hello JVMCON!"));
 
-        System.out.println("Hello world!");
+        System.out.println("Hello world!");  // not `s`!
     }
 }

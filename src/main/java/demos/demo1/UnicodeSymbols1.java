@@ -9,6 +9,7 @@ import static org.junit.Assert.assertTrue;
 public class UnicodeSymbols1 {
     public static void main(String... args) {
         trueLambda();
+        System.out.println("---");
         physics();
     }
 
