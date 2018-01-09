@@ -149,17 +149,17 @@ Are JPA entities evil? 👹
 * Rating: ☠️💣
 
 
-# Avoiding Checkstyle
+# dirty_CLASS
 
 > Demo 7
 
-# Avoiding Checkstyle
+# dirty_CLASS
 
 ## Another use case
 
 Use Java 8 in Java 7 codebase
 
-# Avoiding Checkstyle
+# dirty_CLASS
 
 * `JavaCompiler` available since Java 6
 * Rating: ☠️💣
