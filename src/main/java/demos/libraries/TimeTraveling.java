@@ -1,4 +1,4 @@
-package demos.demo12;
+package demos.libraries;
 
 import net.bytebuddy.ByteBuddy;
 import net.bytebuddy.agent.ByteBuddyAgent;

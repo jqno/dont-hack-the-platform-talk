@@ -1,4 +1,4 @@
-package demos.demo9;
+package demos.libraries;
 
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;

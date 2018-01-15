@@ -1,4 +1,4 @@
-package demos.demo4;
+package demos.reflection;
 
 import java.lang.reflect.Constructor;
 

@@ -44,7 +44,7 @@ Evil consequences
 
 # Things you shouldn't mess with RIGHT NOW:
 
-- Pure Java
+- Language 'features'
 - Reflection
 - Annotations
 - External libraries
@@ -56,11 +56,15 @@ Evil consequences
 - ☠️💣💥
 
 
-# ☠️ Pure Java
+# ☠️ Language 'features'
 
 # Unicode symbols
 
-> Demo 1
+> Demo
+
+# Unicode symbols
+
+> Another demo
 
 # Unicode symbols
 
@@ -71,7 +75,11 @@ Evil consequences
 
 # Unicode escapes
 
-> Demo 2
+> Demo
+
+# Unicode converter
+
+> Demo
 
 # Unicode escapes
 
@@ -99,13 +107,13 @@ However...
 
 # Call of the Void
 
-> Demo 4 
+> Demo
 
 # Oh man 😒
 
     WARNING: An illegal reflective access operation has occurred
-    WARNING: Illegal reflective access by demos.demo4.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
-    WARNING: Please consider reporting this to the maintainers of demos.demo4.CallOfTheVoid
+    WARNING: Illegal reflective access by demos.reflection.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
+    WARNING: Please consider reporting this to the maintainers of demos.reflection.CallOfTheVoid
     WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
     WARNING: All illegal access operations will be denied in a future release
 
@@ -120,7 +128,7 @@ However...
 
 # Loopy
 
-> Demo 5
+> Demo
 
 # Loopy
 
@@ -141,7 +149,7 @@ Are JPA entities evil? 👹
 
 # Interning
 
-> Demo 6
+> Demo
 
 # Interning
 
@@ -151,7 +159,7 @@ Are JPA entities evil? 👹
 
 # dirty_CLASS
 
-> Demo 7
+> Demo
 
 # dirty_CLASS
 
@@ -200,14 +208,14 @@ that does something else
 
 # Constructors are tedious
 
-> Demo 8
+> Demo
 
 # Constructors are tedious
 
 * Rating: ☠️
 
 
-# Singleton
+# Singletons
 
 "[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. [...] A single-element enum type is the best way to implement a singleton"
 
@@ -217,11 +225,11 @@ that does something else
 
 😇
 
-# Singleton
+# Singletons
 
-> Demo 9 
+> Demo
 
-# Singleton
+# Singletons
 
 * Rating: ☠️💣
 
@@ -234,7 +242,7 @@ that does something else
 
 # Confusing card game
 
-> Demo 10
+> Demo
 
 # Confusing card game
 
@@ -244,7 +252,7 @@ that does something else
 
 # Messing with Scala ![](images/scala.png)
 
-> Demo 11
+> Demo
 
 # Messing with Scala ![](images/scala.png)
 
@@ -262,7 +270,7 @@ that does something else
 
 # Time Traveling 🕙🕚
 
-> Demo 12
+> Demo
 
 # Time Traveling 🕙🕚
 

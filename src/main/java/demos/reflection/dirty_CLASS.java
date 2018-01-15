@@ -1,4 +1,4 @@
-package demos.demo7;
+package demos.reflection;
 
 public class dirty_CLASS {
     public static void DO_stuff() {

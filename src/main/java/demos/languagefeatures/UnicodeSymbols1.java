@@ -1,4 +1,4 @@
-package demos.demo1;
+package demos.languagefeatures;
 
 import java.util.List;
 import java.util.function.Consumer;

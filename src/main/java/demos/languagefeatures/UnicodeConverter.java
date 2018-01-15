@@ -1,4 +1,4 @@
-package demos.demo2.helper;
+package demos.languagefeatures;
 
 import java.util.List;
 import java.util.stream.Collectors;

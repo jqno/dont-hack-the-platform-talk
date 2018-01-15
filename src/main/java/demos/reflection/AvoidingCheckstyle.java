@@ -1,4 +1,4 @@
-package demos.demo7;
+package demos.reflection;
 
 import javax.tools.*;
 import java.io.Closeable;

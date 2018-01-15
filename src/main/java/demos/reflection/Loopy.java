@@ -1,4 +1,4 @@
-package demos.demo5;
+package demos.reflection;
 
 import java.lang.reflect.Field;
 

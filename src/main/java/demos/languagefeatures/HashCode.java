@@ -1,6 +1,6 @@
-package demos.demo3;
+package demos.languagefeatures;
 
-public class Rehashing {
+public class HashCode {
     public static void main(String... args) {
         String hello = "Hello world!";
         String another = stringWithSameHashCode(hello);
