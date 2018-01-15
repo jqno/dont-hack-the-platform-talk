@@ -10,6 +10,10 @@ center: "false"
 ---
 # ಠ_ಠ
 
+. . .
+
+You brought this upon yourselves
+
 ::: notes
 
 What are you doing here?
@@ -130,9 +134,11 @@ However...
 
 > Demo
 
-# Loopy
+# Immutability
 
-Was this mutability evil? ✋
+. . .
+
+Was this hack evil? ✋
 
 . . .
 
@@ -142,9 +148,9 @@ Are Calendars and arrays evil? ✋
 
 Are JPA entities evil? 👹
 
-# Loopy
+# Immutability
 
-* Rating: ☠️💣
+* Rating: ☠️💣💥
 
 
 # Interning
