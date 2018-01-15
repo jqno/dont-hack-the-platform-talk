@@ -223,9 +223,9 @@ that does something else
 
 # Singletons
 
-"[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. [...] A single-element enum type is the best way to implement a singleton"
+"[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. [...] A single-element enum type is often the best way to implement a singleton"
 
--- Joshua Bloch, Effective Java 2nd Edition
+-- Joshua Bloch, Effective Java 3rd Edition
 
 . . .
 
