@@ -62,13 +62,15 @@ Evil consequences
 
 # ☠️ Language 'features'
 
-# Unicode symbols
+# True Lambda
 
 > Demo
 
-# Unicode symbols
+---
 
-> Another demo
+# ZALGO
+
+> Demo
 
 # Unicode symbols
 
@@ -77,7 +79,7 @@ Evil consequences
 * Rating: ☠️
 
 
-# Unicode escapes
+# False is True
 
 > Demo
 
