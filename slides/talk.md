@@ -89,7 +89,7 @@ Evil consequences
 
 # False is True
 
-* Rating: ☠️💣
+Rating: ☠️💣
 
 # Unicode converter
 
@@ -137,7 +137,7 @@ However...
 
 # Call of the Void
 
-* Rating: ☠️
+Rating: ☠️
 
 
 # Loopy
@@ -160,7 +160,7 @@ Are JPA entities evil? 👹
 
 # Immutability
 
-* Rating: ☠️💣💥
+Rating: ☠️💣💥
 
 
 # Interning
@@ -237,7 +237,7 @@ private static final String JAVA_8_CLASS_WITH_SYNTHETIC_FIELD =
 
 # JavaCompiler
 
-* Rating: ☠️💣💥
+Rating: ☠️💣💥
 
 
 # ☠️ Annotations
@@ -264,7 +264,7 @@ that does something else
 
 # Boring
 
-* Rating: ☠️
+Rating: ☠️
 
 ![](images/boring.jpg)
 
@@ -279,7 +279,7 @@ that does something else
 
 # Constructors are tedious
 
-* Rating: ☠️
+Rating: ☠️
 
 
 # Singletons
@@ -298,7 +298,7 @@ that does something else
 
 # Singletons
 
-* Rating: ☠️💣
+Rating: ☠️💣
 
 
 # Confusing card game
@@ -313,7 +313,7 @@ that does something else
 
 # Confusing card game
 
-* Rating: ☠️💣💥
+Rating: ☠️💣💥
 
 ![](images/trump.jpg)
 
@@ -323,7 +323,7 @@ that does something else
 
 # Messing with Scala ![](images/scala.png)
 
-* Rating: ☠️💣
+Rating: ☠️💣
 
 
 # External libraries
