@@ -89,6 +89,10 @@ Evil consequences
 
 # False is True
 
+> Kotlin demo
+
+# False is True
+
 Rating: ☠️💣
 
 # Unicode converter
@@ -134,6 +138,11 @@ However...
 . . .
 
 `--add-opens java.base/java.lang=ALL-UNNAMED`
+
+# Oh man 😒
+
+    [INFO] --- kotlin-maven-plugin:1.2.20:compile (compile) @ dont-hack-the-platform ---
+    WARNING: An illegal reflective access operation has occurred
 
 # Call of the Void
 
