@@ -11,8 +11,6 @@ import java.util.Arrays;
 
 public class ConfusingCardGame {
 
-    private static final Objenesis OBJENESIS = new ObjenesisStd();
-
     enum Suit {
         DIAMONDS, CLUBS, HEARTS, SPADES
     }
@@ -30,24 +28,24 @@ public class ConfusingCardGame {
         }
     }
 
-    private static <E extends Enum<?>> void addEnumConstant(Class<E> type, String constantName) throws Exception {
-        Method method = type.getDeclaredMethod("values");
-        Enum[] values = (Enum[])method.invoke(type);
-        int ordinal = values.length;
 
-        E newInstance = OBJENESIS.newInstance(type);
-        setPrivateField(Enum.class, "ordinal", newInstance, ordinal);
-        setPrivateField(Enum.class, "name", newInstance, constantName);
 
-        Enum[] newValues = (Enum[]) Array.newInstance(type, ordinal + 1);
-        System.arraycopy(values, 0, newValues, 0, ordinal);
-        newValues[ordinal] = newInstance;
 
-        Field valuesField = getDeclaredField(type, "$VALUES");
-        Field modifiersField = getDeclaredField(Field.class, "modifiers");
-        modifiersField.setInt(valuesField, valuesField.getModifiers() & ~Modifier.FINAL);
 
-        valuesField.set(null, newValues);
+
+
+
+
+
+    /* HOW DOES IT WORK? */
+
+
+    private static final Objenesis OBJENESIS = new ObjenesisStd();
+
+    private static <T> Field getDeclaredField(Class<T> type, String fieldName) throws Exception {
+        Field field = type.getDeclaredField(fieldName);
+        field.setAccessible(true);
+        return field;
     }
 
     private static <T> void setPrivateField(Class<T> type, String fieldName, T receiver, Object newValue) throws Exception {
@@ -55,9 +53,27 @@ public class ConfusingCardGame {
         field.set(receiver, newValue);
     }
 
-    private static <T> Field getDeclaredField(Class<T> type, String fieldName) throws Exception {
-        Field field = type.getDeclaredField(fieldName);
-        field.setAccessible(true);
-        return field;
+    private static <E extends Enum<?>> void addEnumConstant(Class<E> type, String constantName) throws Exception {
+
+        /* Get enum.values() */
+        Method method = type.getDeclaredMethod("values");
+        Enum[] values = (Enum[])method.invoke(type);
+        int ordinal = values.length;
+
+        /* Create new enum instance */
+        E newInstance = OBJENESIS.newInstance(type);
+        setPrivateField(Enum.class, "ordinal", newInstance, ordinal);
+        setPrivateField(Enum.class, "name", newInstance, constantName);
+
+        /* Create values array with new constant */
+        Enum[] newValues = (Enum[]) Array.newInstance(type, ordinal + 1);
+        System.arraycopy(values, 0, newValues, 0, ordinal);
+        newValues[ordinal] = newInstance;
+
+        /* Replace old enum.values with new */
+        Field valuesField = getDeclaredField(type, "$VALUES");
+        Field modifiersField = getDeclaredField(Field.class, "modifiers");
+        modifiersField.setInt(valuesField, valuesField.getModifiers() & ~Modifier.FINAL);
+        valuesField.set(null, newValues);
     }
 }

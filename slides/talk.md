@@ -177,16 +177,67 @@ Are JPA entities evil? 👹
 
 > Demo
 
-# dirty_CLASS
+# You should probably
 
-## Another use case
+* `URLClassLoader` is `Closeable`
+  * `close()` it, I guess?
+* `CompilationTask` has lots of error data
+  * Do something with that
 
-Use Java 8 in Java 7 codebase
+. . .
 
-# dirty_CLASS
+<br/>
+¯\\\_(ツ)\_/¯
 
-* `JavaCompiler` available since Java 6
-* Rating: ☠️💣
+# Multi-release JAR file
+
+# EqualsVerifier
+
+```java
+@Test
+public void equalsverifierSucceeds_whenOneOfTheFieldsIsSynthetic() {
+    if (!isJava8Available()) {
+        return;
+    }
+
+    Class<?> java8ClassWithSyntheticField = compile(JAVA_8_CLASS_WITH_SYNTHETIC_FIELD_NAME, JAVA_8_CLASS_WITH_SYNTHETIC_FIELD);
+    EqualsVerifier.forClass(java8ClassWithSyntheticField)
+            .verify();
+}
+
+private static final String JAVA_8_CLASS_WITH_SYNTHETIC_FIELD_NAME = "Java8ClassWithSyntheticField";
+private static final String JAVA_8_CLASS_WITH_SYNTHETIC_FIELD =
+        "\nimport java.util.Comparator;" +
+        "\nimport java.util.Objects;" +
+        "\n" +
+        "\npublic final class Java8ClassWithSyntheticField {" +
+        "\n    private static final Comparator<Java8ClassWithSyntheticField> COMPARATOR =" +
+        "\n            (c1, c2) -> 0;   // A lambda is a synthetic class" +
+        "\n" +
+        "\n    private final String s;" +
+        "\n    " +
+        "\n    public Java8ClassWithSyntheticField(String s) {" +
+        "\n        this.s = s;" +
+        "\n    }" +
+        "\n    " +
+        "\n    @Override" +
+        "\n    public boolean equals(Object obj) {" +
+        "\n        if (!(obj instanceof Java8ClassWithSyntheticField)) {" +
+        "\n            return false;" +
+        "\n        }" +
+        "\n        return Objects.equals(s, ((Java8ClassWithSyntheticField)obj).s);" +
+        "\n    }" +
+        "\n    " +
+        "\n    @Override" +
+        "\n    public int hashCode() {" +
+        "\n        return Objects.hash(s);" +
+        "\n    }" +
+        "\n}";
+```
+
+# JavaCompiler
+
+* Rating: ☠️💣💥
 
 
 # ☠️ Annotations
