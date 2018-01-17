@@ -68,7 +68,7 @@ Evil consequences
 
 ---
 
-# ZALGO
+![](images/zalgo.png)
 
 > Demo
 
