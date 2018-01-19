@@ -27,7 +27,7 @@ public class AvoidingCheckstyle {
 
 
         Class<?> dirtyClass = compiler.compile("DiRtYcLaSs", DIRTY_CLASS);
-        Method method = dirtyClass.getDeclaredMethod("DO_stuff");
+        Method method = Reflector.getDeclaredMethod(dirtyClass, "DO_stuff");
         method.invoke(null);
     }
 }

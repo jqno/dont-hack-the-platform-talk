@@ -1,15 +1,15 @@
 package demos.reflection;
 
-import java.lang.reflect.Field;
+import static demos.reflection.Reflector.getPrivateField;
+import static demos.reflection.Reflector.setPrivateField;
 
 public class Intern {
     public static void main(String... args) throws Exception {
         String s = "Hello world!";
         System.out.println(s);
 
-        Field field = String.class.getDeclaredField("value");
-        field.setAccessible(true);
-        field.set(s, field.get("Hello JVMCON!"));
+        Object newValue = getPrivateField(String.class, "value", "Hello JVMCON!");
+        setPrivateField(String.class, "value", s, newValue);
 
         System.out.println("Hello world!");  // not `s`!
     }

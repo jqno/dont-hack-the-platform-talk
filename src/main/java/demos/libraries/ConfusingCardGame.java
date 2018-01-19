@@ -7,7 +7,9 @@ import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.Arrays;
+
+import static demos.reflection.Reflector.getDeclaredField;
+import static demos.reflection.Reflector.setPrivateField;
 
 public class ConfusingCardGame {
 
@@ -41,17 +43,6 @@ public class ConfusingCardGame {
 
 
     private static final Objenesis OBJENESIS = new ObjenesisStd();
-
-    private static <T> Field getDeclaredField(Class<T> type, String fieldName) throws Exception {
-        Field field = type.getDeclaredField(fieldName);
-        field.setAccessible(true);
-        return field;
-    }
-
-    private static <T> void setPrivateField(Class<T> type, String fieldName, T receiver, Object newValue) throws Exception {
-        Field field = getDeclaredField(type, fieldName);
-        field.set(receiver, newValue);
-    }
 
     private static <E extends Enum<?>> void addEnumConstant(Class<E> type, String constantName) throws Exception {
 

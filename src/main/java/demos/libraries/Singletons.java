@@ -3,7 +3,7 @@ package demos.libraries;
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
 
-import java.lang.reflect.Field;
+import static demos.reflection.Reflector.setPrivateField;
 
 public class Singletons {
 
@@ -43,12 +43,6 @@ public class Singletons {
 
 
     private static final Objenesis OBJENESIS = new ObjenesisStd();
-
-    private static <T> void setPrivateField(Class<T> type, String fieldName, T receiver, Object newValue) throws Exception {
-        Field field = type.getDeclaredField(fieldName);
-        field.setAccessible(true);
-        field.set(receiver, newValue);
-    }
 
     private static <E extends Enum<?>> E copyEnumConstant(Class<E> type, E constant) throws Exception {
         E newInstance = OBJENESIS.newInstance(type);

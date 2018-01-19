@@ -12,8 +12,7 @@ public class CallOfTheVoid {
     }
 
     public static Void newVoid() throws Exception {
-        Constructor<Void> constructor = Void.class.getDeclaredConstructor();
-        constructor.setAccessible(true);
+        Constructor<Void> constructor = Reflector.getDeclaredConstructor(Void.class);
         return constructor.newInstance();
     }
 }
