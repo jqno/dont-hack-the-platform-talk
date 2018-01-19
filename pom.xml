@@ -148,11 +148,29 @@
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Agent-Class>demos.libraries.RemoteTimeTraveling</Agent-Class>
+                            <Can-Retransform-Classes>true</Can-Retransform-Classes>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <configuration>
                     <mainClass>${mainClass}</mainClass>
+                    <arguments>
+                        <argument>${arg0}</argument>
+                        <argument>${arg1}</argument>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
