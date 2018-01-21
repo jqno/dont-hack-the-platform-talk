@@ -352,6 +352,10 @@ Rating: ☠️💣
 
 > Demo
 
+<br/><br/>
+<br/><br/>
+Idea shamelessly stolen from<br/>![](images/twitter.png) [joepweijers](https://twitter.com/joepweijers)
+
 # Time Traveling 🕙🕚
 
 * Unit testing legacy code
