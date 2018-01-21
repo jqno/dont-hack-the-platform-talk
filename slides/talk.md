@@ -362,6 +362,26 @@ Idea shamelessly stolen from<br/>![](images/twitter.png) [joepweijers](https://t
 * Messing up any code
 * Rating: ☠️💣💥
 
+# But wait
+
+## There's more
+
+# Remote Time Traveling
+
+> Demo
+
+<br/><br/>
+
+```
+mvn clean package
+
+mvn exec:java -DmainClass=demos.libraries.RemoteTimeTraveling -Darg0=target/dont-hack-the-platform-0.1-SNAPSHOT.jar -Darg1=???
+```
+
+# Remote Time Traveling
+
+Rating:
+<h1>😱😱😱</h1>
 
 ---
 
