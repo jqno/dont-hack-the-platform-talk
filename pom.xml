@@ -8,10 +8,6 @@
     <version>0.1-SNAPSHOT</version>
     <description>The code and slides for the talk of the same name</description>
 
-    <prerequisites>
-        <maven>3.0.4</maven>
-    </prerequisites>
-
     <properties>
         <maven.compiler.source>9</maven.compiler.source>
         <maven.compiler.target>9</maven.compiler.target>
