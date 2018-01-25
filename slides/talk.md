@@ -12,16 +12,11 @@ center: "false"
 
 . . .
 
+![](images/schedule.png)
+
+# ಠ_ಠ
+
 You brought this upon yourselves
-
-::: notes
-
-What are you doing here?
-I told you not to come in my abstract
-
-Also: this is how you hack a conference
-
-:::
 
 # About me 🤓
 
@@ -29,10 +24,16 @@ Jan Ouwens
 
 ![](images/codestar.png)
 
-EqualsVerifier
-
 ![](images/twitter.png) [jqno](https://twitter.com/jqno)
 
+# EqualsVerifier
+
+<br/>
+
+```java
+EqualsVerifier.forClass(Foo.class)
+              .verify();
+```
 
 # About this talk
 
