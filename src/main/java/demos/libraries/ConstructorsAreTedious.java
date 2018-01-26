@@ -6,25 +6,20 @@ import org.objenesis.ObjenesisStd;
 public class ConstructorsAreTedious {
 
     static class Something {
-        private final String hello;
-        private final int x;
-
-        public Something(String hello, int x) {
-            this.hello = hello;
-            this.x = x;
-            throw new IllegalStateException(" ᕕ( ᐛ )ᕗ ");
+        public Something() {
+            throw new IllegalStateException(" (╯°□°）╯︵ ┻━┻ ");
         }
 
         @Override
         public String toString() {
-            return hello + " " + x;
+            return " (☞ﾟヮﾟ)☞ ";
         }
     }
 
     public static void main(String... args) {
-        Objenesis OBJENESIS = new ObjenesisStd();
+        Objenesis objenesis = new ObjenesisStd();
 
-        Something p = OBJENESIS.newInstance(Something.class);
-        System.out.println(p);
+        Something something = objenesis.newInstance(Something.class);
+        System.out.println(something);
     }
 }

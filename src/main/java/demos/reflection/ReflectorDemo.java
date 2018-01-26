@@ -45,8 +45,7 @@ public class ReflectorDemo {
 
 
 //        setPrivateField(Point.class, "x", p, 42);
-//        int x3 = p.x;
-//        System.out.println(x3);
+//        System.out.println(p);
     }
 
 }

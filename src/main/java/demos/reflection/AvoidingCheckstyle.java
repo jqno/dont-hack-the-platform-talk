@@ -14,7 +14,7 @@ import java.util.Locale;
 public class AvoidingCheckstyle {
 
     private static final String DIRTY_CLASS =
-            "public class DiRtYcLaSs {\n" +
+            "public class dirty_CLASS {\n" +
             "    public static void DO_stuff() {\n" +
             "        System.out.println(\"dirty words\");\n" +
             "    }\n" +
@@ -26,7 +26,7 @@ public class AvoidingCheckstyle {
         MyCompiler compiler = new MyCompiler(tempFolder);
 
 
-        Class<?> dirtyClass = compiler.compile("DiRtYcLaSs", DIRTY_CLASS);
+        Class<?> dirtyClass = compiler.compile("dirty_CLASS", DIRTY_CLASS);
         Method method = Reflector.getDeclaredMethod(dirtyClass, "DO_stuff");
         method.invoke(null);
     }

@@ -5,6 +5,8 @@ public class HashCode {
         String hello = "Hello world!";
         String another = stringWithSameHashCode(hello);
 
+        System.out.println(hello);
+        System.out.println(another);
         System.out.println(hello.hashCode() == another.hashCode());
     }
 

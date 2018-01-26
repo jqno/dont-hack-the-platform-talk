@@ -172,7 +172,7 @@ Are Calendars and arrays evil? ✋
 
 Are JPA entities evil? 👹
 
-# Immutability
+# Loopy
 
 Rating: ☠️💣💥
 
