@@ -348,6 +348,13 @@ Rating: ☠️💣
 
 `ByteBuddy Agent`
 
+# Disclaimer
+
+Use cases for agents
+
+* there are many
+* they're legitimate
+
 
 # Time Traveling 🕙🕚
 
