@@ -158,7 +158,7 @@ Rating: ☠️
 
 > Demo
 
-# Immutability
+# Loopy
 
 . . .
 
