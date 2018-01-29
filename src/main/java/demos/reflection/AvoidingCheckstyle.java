@@ -14,11 +14,11 @@ import java.util.Locale;
 public class AvoidingCheckstyle {
 
     private static final String DIRTY_CLASS =
-            "public class dirty_CLASS {\n" +
-            "    public static void DO_stuff() {\n" +
-            "        System.out.println(\"dirty words\");\n" +
-            "    }\n" +
-            "}";
+            "\npublic class dirty_CLASS {" +
+            "\n    public static void DO_stuff() {" +
+            "\n        System.out.println(\"dirty words\");" +
+            "\n    }" +
+            "\n}";
 
     public static void main(String... args) throws Exception {
 
@@ -49,6 +49,12 @@ class MyCompiler {
         this.classLoader = createClassLoader(tempFolder);
     }
 
+    public Class<?> compile(String className, String code) throws Exception {
+        JavaFileObject sourceFile = new StringJavaFileObject(className, code);
+        compileClass(sourceFile);
+        return classLoader.loadClass(className);
+    }
+
     private void compileClass(JavaFileObject sourceFile) throws IOException {
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         StandardJavaFileManager fileManager = null;
@@ -74,12 +80,6 @@ class MyCompiler {
     }
 
 
-
-    public Class<?> compile(String className, String code) throws Exception {
-        JavaFileObject sourceFile = new StringJavaFileObject(className, code);
-        compileClass(sourceFile);
-        return classLoader.loadClass(className);
-    }
 
 
     /* HERE IS SOME BORING STUFF */

@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
 import static demos.reflection.Reflector.getDeclaredField;
-import static demos.reflection.Reflector.setPrivateField;
+import static demos.reflection.Reflector.setPrivateFieldValue;
 
 public class ConfusingCardGame {
 
@@ -53,8 +53,8 @@ public class ConfusingCardGame {
 
         /* Create new enum instance */
         E newInstance = OBJENESIS.newInstance(type);
-        setPrivateField(Enum.class, "ordinal", newInstance, ordinal);
-        setPrivateField(Enum.class, "name", newInstance, constantName);
+        setPrivateFieldValue(Enum.class, "ordinal", newInstance, ordinal);
+        setPrivateFieldValue(Enum.class, "name", newInstance, constantName);
 
         /* Create values array with new constant */
         Enum[] newValues = (Enum[]) Array.newInstance(type, ordinal + 1);

@@ -24,12 +24,12 @@ public class Reflector {
         return field;
     }
 
-    public static <T> void setPrivateField(Class<T> type, String fieldName, T receiver, Object newValue) throws NoSuchFieldException, IllegalAccessException {
+    public static <T> void setPrivateFieldValue(Class<T> type, String fieldName, T receiver, Object newValue) throws NoSuchFieldException, IllegalAccessException {
         Field field = getDeclaredField(type, fieldName);
         field.set(receiver, newValue);
     }
 
-    public static <T> Object getPrivateField(Class<T> type, String fieldName, T receiver) throws NoSuchFieldException, IllegalAccessException {
+    public static <T> Object getPrivateFieldValue(Class<T> type, String fieldName, T receiver) throws NoSuchFieldException, IllegalAccessException {
         Field field = getDeclaredField(type, fieldName);
         return field.get(receiver);
     }

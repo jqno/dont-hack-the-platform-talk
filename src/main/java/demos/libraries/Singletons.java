@@ -3,7 +3,7 @@ package demos.libraries;
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
 
-import static demos.reflection.Reflector.setPrivateField;
+import static demos.reflection.Reflector.setPrivateFieldValue;
 
 public class Singletons {
 
@@ -46,8 +46,8 @@ public class Singletons {
 
     private static <E extends Enum<?>> E copyEnumConstant(Class<E> type, E constant) throws Exception {
         E newInstance = OBJENESIS.newInstance(type);
-        setPrivateField(Enum.class, "ordinal", newInstance, constant.ordinal());
-        setPrivateField(Enum.class, "name", newInstance, constant.name());
+        setPrivateFieldValue(Enum.class, "ordinal", newInstance, constant.ordinal());
+        setPrivateFieldValue(Enum.class, "name", newInstance, constant.name());
         return newInstance;
     }
 }

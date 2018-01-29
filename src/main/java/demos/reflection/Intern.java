@@ -1,16 +1,19 @@
 package demos.reflection;
 
-import static demos.reflection.Reflector.getPrivateField;
-import static demos.reflection.Reflector.setPrivateField;
+import static demos.reflection.Reflector.getPrivateFieldValue;
+import static demos.reflection.Reflector.setPrivateFieldValue;
 
 public class Intern {
     public static void main(String... args) throws Exception {
-        String s = "Hello world!";
-        System.out.println(s);
+        String world = "Hello world!";
+        String jvmcon = "Hello JVMCON!";
 
-        Object newValue = getPrivateField(String.class, "value", "Hello JVMCON!");
-        setPrivateField(String.class, "value", s, newValue);
+        System.out.println(world);
+        System.out.println(jvmcon);
 
-        System.out.println("Hello world!");  // not `s`!
+        Object newValue = getPrivateFieldValue(String.class, "value", jvmcon);
+        setPrivateFieldValue(String.class, "value", world, newValue);
+
+        System.out.println("Hello world!");
     }
 }

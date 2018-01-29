@@ -5,11 +5,11 @@ import java.util.stream.Collectors;
 
 public class UnicodeConverter {
     private static final String PROGRAM =
-            "public class UnicodeEscapism {\n" +
-            "    public static void main(String... args) {\n" +
-            "        System.out.println(\"Hello JVMCON!\");\n" +
-            "    }\n" +
-            "}";
+            "\npublic class UnicodeEscapism {" +
+            "\n    public static void main(String... args) {" +
+            "\n        System.out.println(\"Hello JVMCON!\");" +
+            "\n    }" +
+            "\n}";
 
     public static void main(String... args) {
         List<String> strings = PROGRAM.chars()
