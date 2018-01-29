@@ -160,8 +160,6 @@ Rating: ☠️
 
 # Loopy
 
-. . .
-
 Was this hack evil? ✋
 
 . . .
@@ -193,10 +191,9 @@ Rating: ☠️💣💥
 
 # You should probably
 
-* `URLClassLoader` is `Closeable`
-  * `close()` it, I guess?
-* `CompilationTask` has lots of error data
-  * Do something with that
+* Call `close()` on `URLClassLoader`
+* Error reporting with `CompilationTask`
+* Proper exception handling
 
 . . .
 
