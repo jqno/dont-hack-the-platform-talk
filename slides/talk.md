@@ -98,6 +98,14 @@ Rating: ☠️💣
 * Maven says ¯\\\_(ツ)\_/¯
 * Rating: ☠️💣
 
+# Emoji
+
+> Demo
+
+# Emoji
+
+* Rating: 🎉
+
 
 # Hash-code
 
