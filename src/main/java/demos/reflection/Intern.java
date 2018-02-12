@@ -6,12 +6,12 @@ import static demos.reflection.Reflector.setPrivateFieldValue;
 public class Intern {
     public static void main(String... args) throws Exception {
         String world = "Hello world!";
-        String jvmcon = "Hello JVMCON!";
+        String hackers = "Hello hackers!";
 
         System.out.println(world);
-        System.out.println(jvmcon);
+        System.out.println(hackers);
 
-        Object newValue = getPrivateFieldValue(String.class, "value", jvmcon);
+        Object newValue = getPrivateFieldValue(String.class, "value", hackers);
         setPrivateFieldValue(String.class, "value", world, newValue);
 
         System.out.println("Hello world!");

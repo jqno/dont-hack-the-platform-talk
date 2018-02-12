@@ -7,7 +7,7 @@ public class UnicodeConverter {
     private static final String PROGRAM =
             "\npublic class UnicodeEscapism {" +
             "\n    public static void main(String... args) {" +
-            "\n        System.out.println(\"Hello JVMCON!\");" +
+            "\n        System.out.println(\"Hello hackers!\");" +
             "\n    }" +
             "\n}";
 

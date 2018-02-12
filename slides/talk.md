@@ -10,14 +10,6 @@ center: "false"
 ---
 # ಠ_ಠ
 
-. . .
-
-![](images/schedule.png)
-
-# ಠ_ಠ
-
-You brought this upon yourselves
-
 # About me 🤓
 
 Jan Ouwens
