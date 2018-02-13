@@ -392,6 +392,27 @@ Rating:
 
 ![](images/thats-all-folks.png)
 
+# Awareness
+
+# Emoji & unicode
+
+* Checkstyle
+* SonarQube
+
+# Reflection and libraries
+
+```java
+System.setSecurityManager(new SecurityManager());
+```
+
+# Security manager
+
+> Demo
+
+# Security manager
+
+![](images/no-spring.png)
+
 # Do try this at home!
 
 Maybe not at work though?
@@ -405,3 +426,4 @@ slides & code at<br/>
 
 me at<br/>
 ![](images/twitter.png) [jqno](https://twitter.com/jqno)
+

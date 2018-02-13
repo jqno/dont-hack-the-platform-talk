@@ -15,6 +15,7 @@ But if you do it anyway, [here's the presentation](http://jqno.nl/dont-hack-the-
 | codestar.png | Codestar | [source](http://www.codestar.nl) |
 | dr-evil.jpg | New Line Cinema | [source](https://en.wikipedia.org/wiki/File:Drevil_million_dollars.jpg) |
 | github.png | GitHub | [source](https://github.com/logos) |
+| no-spring.png | Pivotal | [source](https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/spring-boot/spring-boot.png) (Spring's GitHub avatar) |
 | rtlnieuws.png | RTL Nieuws, January 30th, 2017 | [source](https://www.rtlnieuws.nl/nederland/politiek/zo-werkt-het-softwaresysteem-dat-onze-stemmen-telt) (captured December 31st, 2017) |
 | scala.png | Scala-Lang.org | [source](https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png) |
 | tarot.jpg | me | - |
