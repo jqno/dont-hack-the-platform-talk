@@ -109,7 +109,7 @@ Rating: ☠️💣
 
 # Hash-code
 
-> Demo 3
+> Demo
 
 # Hash-code
 
