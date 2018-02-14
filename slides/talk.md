@@ -394,6 +394,8 @@ Rating:
 
 # Awareness
 
+![](images/ribbon.png)
+
 # Emoji & unicode
 
 * Checkstyle
