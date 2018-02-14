@@ -403,17 +403,32 @@ Rating:
 
 # Reflection and libraries
 
+* Security manager
+* Modularisation
+
+# Security manager
+
+> Demo
+
+<br/><br/>
+
 ```java
 System.setSecurityManager(new SecurityManager());
 ```
 
 # Security manager
 
-> Demo
-
-# Security manager
-
 ![](images/no-spring.png)
+
+# Modularisation
+
+    WARNING: An illegal reflective access operation has occurred
+    WARNING: Illegal reflective access by demos.reflection.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
+    WARNING: Please consider reporting this to the maintainers of demos.reflection.CallOfTheVoid
+    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+    WARNING: All illegal access operations will be denied in a future release
+
+`--illegal-access=deny`
 
 # Do try this at home!
 
