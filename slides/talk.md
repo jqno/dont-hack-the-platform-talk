@@ -359,7 +359,7 @@ Use cases for agents
 
 <br/><br/>
 <br/><br/>
-Idea shamelessly stolen from<br/>![](images/twitter.png) [joepweijers](https://twitter.com/joepweijers)
+Idea shamelessly stolen from<br/>![](images/github.png) [/TOPdesk/time-transformer-agent](https://github.com/TOPdesk/time-transformer-agent)
 
 # Time Traveling 🕙🕚
 
