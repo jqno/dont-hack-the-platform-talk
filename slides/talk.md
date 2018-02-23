@@ -192,8 +192,8 @@ Rating: ☠️💣💥
 # You should probably
 
 * Call `close()` on `URLClassLoader`
-* Error reporting with `CompilationTask`
-* Proper exception handling
+* Report compilation errors with `CompilationTask`
+* Handle exceptions
 
 . . .
 
