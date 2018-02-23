@@ -57,7 +57,7 @@ public class ConfusingCardGame {
         setPrivateFieldValue(Enum.class, "name", newInstance, constantName);
 
         /* Create values array with new constant */
-        Enum[] newValues = (Enum[]) Array.newInstance(type, ordinal + 1);
+        Enum[] newValues = (Enum[])Array.newInstance(type, ordinal + 1);
         System.arraycopy(values, 0, newValues, 0, ordinal);
         newValues[ordinal] = newInstance;
 
