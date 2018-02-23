@@ -14,6 +14,8 @@ public class Intern {
         Object newValue = getPrivateFieldValue(String.class, "value", hackers);
         setPrivateFieldValue(String.class, "value", world, newValue);
 
+        System.out.println("---");
+        System.out.println(world);
         System.out.println("Hello world!");
     }
 }
