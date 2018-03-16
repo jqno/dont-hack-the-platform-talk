@@ -59,13 +59,7 @@ Evil consequences
 
 > Demo
 
----
-
-![](images/zalgo.png)
-
-> Demo
-
-# Unicode symbols
+# True Lambda
 
 * Hard to type
 * Hard to read
@@ -78,48 +72,7 @@ Evil consequences
 
 # False is True
 
-> Scala demo
-
-# False is True
-
-> Kotlin demo
-
-# False is True
-
 Rating: ☠️💣
-
-# Unicode converter
-
-> Demo
-
-# Unicode escapes
-
-* Harder to type and read
-* Maven says ¯\\\_(ツ)\_/¯
-* Rating: ☠️💣
-
-# Emoji
-
-> Demo
-
-# Emoji
-
-* Rating: 🎉
-
-
-# Hash-code
-
-> Demo
-
-# Hash-code
-
-* Fun when coworkers insist on hashCode as key
-* Rating: ☠️
-
-. . .
-
-However...
-![](images/rtlnieuws.png)
 
 
 # ☠️ Reflection
@@ -127,31 +80,6 @@ However...
 # Introducing: Reflector
 
 > Demo
-
-# Call of the Void
-
-> Demo
-
-# Oh man 😒
-
-    WARNING: An illegal reflective access operation has occurred
-    WARNING: Illegal reflective access by demos.reflection.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
-    WARNING: Please consider reporting this to the maintainers of demos.reflection.CallOfTheVoid
-    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-    WARNING: All illegal access operations will be denied in a future release
-
-. . .
-
-`--add-opens java.base/java.lang=ALL-UNNAMED`
-
-# Oh man 😒
-
-    [INFO] --- kotlin-maven-plugin:1.2.20:compile (compile) @ dont-hack-the-platform ---
-    WARNING: An illegal reflective access operation has occurred
-
-# Call of the Void
-
-Rating: ☠️
 
 
 # Loopy
@@ -183,6 +111,18 @@ Rating: ☠️💣💥
 
 * Fun way to mess up unit tests!
 * Rating: ☠️💣
+
+# Oh man 😒
+
+    WARNING: An illegal reflective access operation has occurred
+    WARNING: Illegal reflective access by demos.reflection.Reflector (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to field java.lang.String.value
+    WARNING: Please consider reporting this to the maintainers of demos.reflection.Reflector
+    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+    WARNING: All illegal access operations will be denied in a future release
+
+. . .
+
+`--add-opens java.base/java.lang=ALL-UNNAMED`
 
 
 # dirty_CLASS
@@ -293,7 +233,7 @@ Rating: ☠️
 Rating: ☠️
 
 
-# Singletons
+# Enums
 
 "[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. [...] A single-element enum type is often the best way to implement a singleton"
 
@@ -302,15 +242,6 @@ Rating: ☠️
 . . .
 
 😇
-
-# Singletons
-
-> Demo
-
-# Singletons
-
-Rating: ☠️💣
-
 
 # Confusing card game
 
@@ -327,14 +258,6 @@ Rating: ☠️💣
 Rating: ☠️💣💥
 
 ![](images/trump.jpg)
-
-# Messing with Scala ![](images/scala.png)
-
-> Demo
-
-# Messing with Scala ![](images/scala.png)
-
-Rating: ☠️💣
 
 
 # External libraries
@@ -396,7 +319,7 @@ Rating:
 
 ![](images/ribbon.png)
 
-# Emoji & unicode
+# Unicode
 
 * Checkstyle
 * SonarQube
@@ -405,16 +328,6 @@ Rating:
 
 * Security manager
 * Modularisation
-
-# Security manager
-
-> Demo
-
-<br/><br/>
-
-```java
-System.setSecurityManager(new SecurityManager());
-```
 
 # Security manager
 
