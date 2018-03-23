@@ -1,6 +1,6 @@
 ---
 author: Jan Ouwens
-title: Don't hack the platform? ☠️💣💥
+title: Don't hack the JVM? ☠️💣💥
 date: April 4, 2018
 theme: moon
 transition: none
