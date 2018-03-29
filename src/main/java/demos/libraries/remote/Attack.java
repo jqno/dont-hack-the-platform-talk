@@ -1,18 +1,16 @@
-package demos.libraries;
+package demos.libraries.remote;
 
 import net.bytebuddy.agent.ByteBuddyAgent;
 import net.bytebuddy.agent.builder.AgentBuilder;
-import net.bytebuddy.implementation.MethodDelegation;
 
 import java.io.File;
 import java.lang.instrument.Instrumentation;
-import java.util.Random;
 
 import static net.bytebuddy.implementation.FixedValue.value;
 import static net.bytebuddy.matcher.ElementMatchers.named;
 import static net.bytebuddy.matcher.ElementMatchers.none;
 
-public class RemoteTimeTraveling {
+public class Attack {
 
     public static void main(String... args) {
         File agentJar = new File(args[0]);

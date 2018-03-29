@@ -10,8 +10,6 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 public class TimeTraveling {
     public static void main(String... args) throws Exception {
 
-        System.out.println("Current PID: " + ProcessHandle.current().pid());
-
         int i = 0;
         while (true) {
             System.out.println(System.currentTimeMillis());
