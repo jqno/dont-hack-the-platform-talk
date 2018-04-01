@@ -17,9 +17,9 @@ public class ConstructorsAreTedious {
     }
 
     public static void main(String... args) {
-        Objenesis objenesis = new ObjenesisStd();
+        var objenesis = new ObjenesisStd();
+        var something = objenesis.newInstance(Something.class);
 
-        Something something = objenesis.newInstance(Something.class);
         System.out.println(something);
     }
 }

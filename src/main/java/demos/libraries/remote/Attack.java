@@ -13,8 +13,8 @@ import static net.bytebuddy.matcher.ElementMatchers.none;
 public class Attack {
 
     public static void main(String... args) {
-        File agentJar = new File(args[0]);
-        String pid = args[1];
+        var agentJar = new File(args[0]);
+        var pid = args[1];
         ByteBuddyAgent.attach(agentJar, pid);
     }
 

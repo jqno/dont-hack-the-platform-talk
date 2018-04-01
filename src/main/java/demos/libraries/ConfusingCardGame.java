@@ -18,14 +18,14 @@ public class ConfusingCardGame {
     }
 
     public static void main(String... args) throws Exception {
-        for (Suit s : Suit.values()) {
+        for (var s : Suit.values()) {
             System.out.println(s);
         }
 
         System.out.println("\nShuffle\n");
         addEnumConstant(Suit.class, "TRUMPS");
 
-        for (Suit s : Suit.values()) {
+        for (var s : Suit.values()) {
             System.out.println(s);
         }
     }

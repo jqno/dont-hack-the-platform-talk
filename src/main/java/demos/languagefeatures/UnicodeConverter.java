@@ -1,6 +1,5 @@
 package demos.languagefeatures;
 
-import java.util.List;
 import java.util.stream.Collectors;
 
 public class UnicodeConverter {
@@ -12,11 +11,11 @@ public class UnicodeConverter {
             "\n}";
 
     public static void main(String... args) {
-        List<String> strings = PROGRAM.chars()
+        var strings = PROGRAM.chars()
                 .mapToObj(UnicodeConverter::convertChar)
                 .collect(Collectors.toList());
 
-        String output = String.join("", strings);
+        var output = String.join("", strings);
         System.out.println(output);
     }
 
