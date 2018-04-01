@@ -22,12 +22,12 @@ public class AvoidingCheckstyle {
 
     public static void main(String... args) throws Exception {
 
-        File tempFolder = new File(System.getProperty("java.io.tmpdir"));
-        MyCompiler compiler = new MyCompiler(tempFolder);
+        var tempFolder = new File(System.getProperty("java.io.tmpdir"));
+        var compiler = new MyCompiler(tempFolder);
 
 
-        Class<?> dirtyClass = compiler.compile("dirty_CLASS", DIRTY_CLASS);
-        Method method = Reflector.getDeclaredMethod(dirtyClass, "DO_stuff");
+        var dirtyClass = compiler.compile("dirty_CLASS", DIRTY_CLASS);
+        var method = Reflector.getDeclaredMethod(dirtyClass, "DO_stuff");
         method.invoke(null);
     }
 }
@@ -50,27 +50,20 @@ class MyCompiler {
     }
 
     public Class<?> compile(String className, String code) throws Exception {
-        JavaFileObject sourceFile = new StringJavaFileObject(className, code);
+        var sourceFile = new StringJavaFileObject(className, code);
         compileClass(sourceFile);
         return classLoader.loadClass(className);
     }
 
     private void compileClass(JavaFileObject sourceFile) throws IOException {
-        JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-        StandardJavaFileManager fileManager = null;
-        DiagnosticCollector<JavaFileObject> collector = new DiagnosticCollector<>();
+        var compiler = ToolProvider.getSystemJavaCompiler();
+        var collector = new DiagnosticCollector<>();
 
-        try {
-            fileManager = compiler.getStandardFileManager(collector, Locale.ROOT, null);
+        try (var fileManager = compiler.getStandardFileManager(collector, Locale.ROOT, null)) {
             fileManager.setLocation(StandardLocation.CLASS_OUTPUT, Collections.singletonList(tempFolder));
             JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, collector, null, null, Collections.singletonList(sourceFile));
 
             task.call();
-        }
-        finally {
-            if (fileManager != null) {
-                fileManager.close();
-            }
         }
     }
 
