@@ -235,7 +235,7 @@ Rating: ☠️
 
 # Enums
 
-"[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks."
+"[An enum] provides an **ironclad guarantee** against multiple instantiation, even in the face of **sophisticated serialization or reflection attacks**."
 
 -- Joshua Bloch, Effective Java 3rd Edition
 
