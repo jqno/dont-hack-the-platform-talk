@@ -14,16 +14,17 @@ public class TrueLambda {
     }
 
     private static void trueLambda() {
-        List<Integer> ints = List.of(1, 2, 3);
+        var ints = List.of(1, 2, 3);
 
         Consumer<Integer> λ = i -> System.out.println(i);
+
         ints.forEach(λ);
     }
 
     private static void physics() {
-        double ΔL = 8;
-        double L = 2;
-        double ε = ΔL / L;
+        var ΔL = 8.0;
+        var L = 2.0;
+        var ε = ΔL / L;
 
         System.out.println(ε);
     }
