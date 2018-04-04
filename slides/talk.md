@@ -79,7 +79,7 @@ Rating: ☠️💣
 
 # Introducing: Reflector
 
-> Demo
+> Show me the code
 
 
 # Loopy
@@ -235,7 +235,7 @@ Rating: ☠️
 
 # Enums
 
-"[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. [...] A single-element enum type is often the best way to implement a singleton"
+"[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks."
 
 -- Joshua Bloch, Effective Java 3rd Edition
 
