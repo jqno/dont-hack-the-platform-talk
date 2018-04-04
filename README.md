@@ -1,4 +1,4 @@
-This repository contains all the code and slides for my [JVMCON](https://jvmcon.com) talk "Don't hack the platform? ☠️💣💥"
+This repository contains all the code and slides for my talk "Don't hack the platform? ☠️💣💥"
 
 You really shouldn't look at this!
 
