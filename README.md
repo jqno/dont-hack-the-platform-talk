@@ -2,7 +2,7 @@ This repository contains all the code and slides for my [JVMCON](https://jvmcon.
 
 You really shouldn't look at this!
 
-But if you do it anyway, [here's the presentation](http://jqno.nl/dont-hack-the-platform-talk/2018-01-30-jvmcon).
+But if you do it anyway, [here's the presentation](http://jqno.nl/dont-hack-the-platform-talk/2018-02-23-portbase).
 
 ---
 
