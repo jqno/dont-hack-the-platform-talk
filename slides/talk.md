@@ -396,11 +396,6 @@ Rating:
 * Checkstyle
 * SonarQube
 
-# Reflection and libraries
-
-* Security manager
-* Modularisation
-
 # Security manager
 
 > Demo
