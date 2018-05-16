@@ -21,3 +21,7 @@
   color: #eee8d5;
 }
 
+.reveal pre {
+  box-shadow: 0px 0px 0px;
+}
+

@@ -10,7 +10,11 @@ center: "false"
 ---
 # ಠ_ಠ
 
-# About me 🤓
+---
+
+![](images/sombrero.jpg){ style="float:right" height=800px }
+
+<h1>About me 🤓</h1>
 
 Jan Ouwens
 
@@ -29,13 +33,9 @@ EqualsVerifier.forClass(Foo.class)
 
 # About this talk
 
----
+# {data-background-image="images/accident.jpg"}
 
-![](images/accident.jpg)
-
----
-
-![](images/evil.jpg)
+# {data-background-image="images/evil.jpg"}
 
 # Things you shouldn't mess with RIGHT NOW:
 
@@ -266,11 +266,11 @@ into generating bytecode
 
 that does something else
 
-# Boring
+# {data-background-image="images/boring.jpg"}
 
-Rating: ☠️
+<br/><br/><br/><br/><br/>
 
-![](images/boring.jpg)
+<h1>Boring</h1>
 
 
 # ☠️ External libraries
@@ -309,7 +309,7 @@ Rating: ☠️💣
 
 ---
 
-![](images/tarot.jpg)
+# {data-background-image="images/tarot.jpg"}
 
 # Confusing card game
 
@@ -319,7 +319,10 @@ Rating: ☠️💣
 
 Rating: ☠️💣💥
 
+# Confusing card game
+
 ![](images/trump.png)
+
 
 # Messing with Scala ![](images/scala.png)
 
@@ -385,9 +388,9 @@ Rating:
 
 # </>
 
----
+# {data-background-image="images/ribbon.jpg"}
 
-![](images/ribbon.jpg)
+<h1>Awareness</h1>
 
 # Emoji & unicode
 
