@@ -29,15 +29,13 @@ EqualsVerifier.forClass(Foo.class)
 
 # About this talk
 
-![](images/Bob_at_Easel.jpg)
+---
 
-Happy accidents
+![](images/accident.jpg)
 
-# About this talk
+---
 
-![](images/dr-evil.jpg)
-
-Evil consequences
+![](images/evil.jpg)
 
 # Things you shouldn't mess with RIGHT NOW:
 
@@ -321,7 +319,7 @@ Rating: ☠️💣
 
 Rating: ☠️💣💥
 
-![](images/trump.jpg)
+![](images/trump.png)
 
 # Messing with Scala ![](images/scala.png)
 
@@ -385,11 +383,11 @@ Rating:
 
 ---
 
-![](images/thats-all-folks.png)
+# </>
 
-# Awareness
+---
 
-![](images/ribbon.png)
+![](images/ribbon.jpg)
 
 # Emoji & unicode
 
