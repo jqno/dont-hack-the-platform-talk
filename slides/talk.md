@@ -124,28 +124,6 @@ However...
 
 # Introducing: Reflector
 
-> Demo
-
-# Call of the Void
-
-> Demo
-
-# Oh man 😒
-
-    WARNING: An illegal reflective access operation has occurred
-    WARNING: Illegal reflective access by demos.reflection.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
-    WARNING: Please consider reporting this to the maintainers of demos.reflection.CallOfTheVoid
-    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-    WARNING: All illegal access operations will be denied in a future release
-
-. . .
-
-`--add-opens java.base/java.lang=ALL-UNNAMED`
-
-# Call of the Void
-
-Rating: ☠️
-
 
 # Loopy
 
@@ -171,6 +149,18 @@ Rating: ☠️💣💥
 # Interning
 
 > Demo
+
+# Oh man 😒
+
+    WARNING: An illegal reflective access operation has occurred
+    WARNING: Illegal reflective access by demos.reflection.Intern (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
+    WARNING: Please consider reporting this to the maintainers of demos.reflection.Intern
+    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+    WARNING: All illegal access operations will be denied in a future release
+
+. . .
+
+`--add-opens java.base/java.lang=ALL-UNNAMED`
 
 # Interning
 
@@ -322,15 +312,6 @@ Rating: ☠️💣💥
 # Confusing card game
 
 ![](images/trump.png)
-
-
-# Messing with Scala ![](images/scala.png)
-
-> Demo
-
-# Messing with Scala ![](images/scala.png)
-
-Rating: ☠️💣
 
 
 # External libraries
