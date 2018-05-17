@@ -11,6 +11,7 @@ This branch is empty and serves as an index. Each time I gave the presentation, 
 
 # Otherwise, maybe you saw me at:
 
+* [2018, May 17: ING Backend Guild](http://github.com/jqno/dont-hack-the-platform-talk/tree/2018-05-17-ing)
 * [2018, Apr 4: Ordina Code & Comedy](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-04-04-ordina-code-&-comedy)
 * [2018, Feb 23: Portbase](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-02-23-portbase)
 
