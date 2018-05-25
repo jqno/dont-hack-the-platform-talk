@@ -153,8 +153,8 @@ Rating: ☠️💣💥
 # Oh man 😒
 
     WARNING: An illegal reflective access operation has occurred
-    WARNING: Illegal reflective access by demos.reflection.Intern (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
-    WARNING: Please consider reporting this to the maintainers of demos.reflection.Intern
+    WARNING: Illegal reflective access by demos.reflection.Reflector (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to field java.lang.String.value
+    WARNING: Please consider reporting this to the maintainers of demos.reflection.Reflector
     WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
     WARNING: All illegal access operations will be denied in a future release
 
