@@ -9,7 +9,7 @@ object Emoji extends App {
   val `✋`: `🎻` `🔀` `🦄` = println
 
   val `👹` = "Hello "
-  val `🍺` = "hackers"
+  val `🍺` = "Philips"
 
   `✋`(`👹` ⊕ `🍺`)
 
