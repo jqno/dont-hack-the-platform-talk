@@ -10,7 +10,7 @@ object KotlinFalseIsTrue {
 
         println("False is true...")
 
-        // Or is it?          \u000A if (false)
+        // Or is it?          \u000A if (false) return
         println("...not!")
     }
 }
