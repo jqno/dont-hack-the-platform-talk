@@ -64,8 +64,7 @@ public class ConfusingCardGame {
         /* Replace old enum.values with new */
         /* $VALUES is static final so we have to make it non-final first 😎 */
         Field valuesField = getDeclaredField(type, "$VALUES");
-        Field modifiersField = getDeclaredField(Field.class, "modifiers");
-        modifiersField.setInt(valuesField, valuesField.getModifiers() & ~Modifier.FINAL);
+        setPrivateFieldValue(Field.class, "modifiers", valuesField, valuesField.getModifiers() & ~Modifier.FINAL);
         valuesField.set(null, newValues);
     }
 }
