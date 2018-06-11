@@ -1,12 +1,16 @@
 ---
-author: Jan Ouwens
-title: Don't hack the platform? ☠️💣💥
-date: JBCNConf 2018
+pagetitle: Don't hack the platform? ☠️💣💥
 theme: moon
 transition: none
 progress: "false"
 controls: "false"
 center: "false"
+---
+# Don't hack the platform? ☠️💣💥
+
+Jan Ouwens<br/>
+
+![](images/logo-jbcnconf.png)
 ---
 # ಠ_ಠ
 
