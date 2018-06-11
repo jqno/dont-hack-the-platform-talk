@@ -114,7 +114,7 @@ Rating: ☠️💣
 * Fun when coworkers insist on hashCode as key
 * Rating: ☠️
 
-. . .
+# Hash-code
 
 However...
 ![](images/rtlnieuws.png)
