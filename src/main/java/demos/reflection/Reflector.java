@@ -1,16 +1,9 @@
 package demos.reflection;
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class Reflector {
-
-    public static <T> Constructor<T> getDeclaredConstructor(Class<T> type, Class<?>... parameterTypes) throws NoSuchMethodException {
-        var constructor = type.getDeclaredConstructor(parameterTypes);
-        constructor.setAccessible(true);
-        return constructor;
-    }
 
     public static <T> Method getDeclaredMethod(Class<T> type, String name, Class<?>... parameterTypes) throws NoSuchMethodException {
         var method = type.getDeclaredMethod(name, parameterTypes);
