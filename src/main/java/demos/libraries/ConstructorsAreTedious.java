@@ -1,6 +1,5 @@
 package demos.libraries;
 
-import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
 
 public class ConstructorsAreTedious {
