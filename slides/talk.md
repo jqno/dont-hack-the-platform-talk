@@ -61,6 +61,10 @@ EqualsVerifier.forClass(Foo.class)
 
 > Demo
 
+# True Lambda
+
+Java 10!
+
 ---
 
 ![](images/zalgo.png)
