@@ -59,7 +59,7 @@ EqualsVerifier.forClass(Foo.class)
 
 # True Lambda
 
-Java 10!
+Java 11!
 
 ---
 

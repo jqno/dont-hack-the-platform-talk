@@ -9,11 +9,11 @@
     <description>The code and slides for the talk of the same name</description>
 
     <properties>
-        <maven.compiler.source>10</maven.compiler.source>
-        <maven.compiler.target>10</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <encoding>UTF-8</encoding>
-        <scala.version>2.12.4</scala.version>
-        <kotlin.version>1.2.31</kotlin.version>
+        <scala.version>2.12.6</scala.version>
+        <kotlin.version>1.2.61</kotlin.version>
     </properties>
 
     <dependencies>
@@ -30,12 +30,12 @@
         <dependency>
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
-            <version>1.8.1</version>
+            <version>1.8.20</version>
         </dependency>
         <dependency>
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy-agent</artifactId>
-            <version>1.8.1</version>
+            <version>1.8.20</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -44,7 +44,7 @@
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <artifactId>kotlin-stdlib</artifactId>
             <version>${kotlin.version}</version>
         </dependency>
         <dependency>
