@@ -7,6 +7,7 @@ transition: none
 progress: "false"
 controls: "false"
 center: "false"
+background-image: "images/background.jpg"
 ---
 # ಠ_ಠ
 
