@@ -1,13 +1,17 @@
 ---
-author: Jan Ouwens
-title: Don't hack the platform? ☠️💣💥
-date: February 23, 2018
+pagetitle: Don't hack the platform? ☠️💣💥
 theme: moon
 transition: none
 progress: "false"
 controls: "false"
 center: "false"
 background-image: "images/background.jpg"
+---
+# Don't hack the platform? ☠️💣💥
+
+Jan Ouwens <br/>
+
+![](images/logo-javazone.svg){ width='30%' }
 ---
 # ಠ_ಠ
 
