@@ -38,7 +38,7 @@ EqualsVerifier.forClass(Foo.class)
 
 # {data-background-image="images/evil.jpg"}
 
-# Things you shouldn't mess with RIGHT NOW:
+# Things you shouldn't mess with:
 
 - Language 'features'
 - Reflection
@@ -61,6 +61,14 @@ EqualsVerifier.forClass(Foo.class)
 # True Lambda
 
 Java 11!
+
+# Sidebar
+
+Also annoy your coworkers with
+
+* Weird color scheme
+* Nyancat plugin
+* VIM plugin
 
 ---
 
@@ -285,7 +293,13 @@ Rating: ☠️
 
 "[An enum] provides an **ironclad guarantee** against multiple instantiation, even in the face of **sophisticated serialization or reflection attacks**. [...] A single-element enum type is often the best way to implement a singleton."
 
--- Joshua Bloch, Effective Java 3rd Edition
+-- Joshua Bloch, Effective Java 2nd Edition
+
+# Singletons
+
+"[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. [...] A single-element enum type is often the best way to implement a singleton."
+
+-- Joshua Bloch, Effective Java **3rd** Edition
 
 . . .
 
@@ -400,8 +414,8 @@ System.setSecurityManager(new SecurityManager());
 # Modularisation
 
     WARNING: An illegal reflective access operation has occurred
-    WARNING: Illegal reflective access by demos.reflection.CallOfTheVoid (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to constructor java.lang.Void()
-    WARNING: Please consider reporting this to the maintainers of demos.reflection.CallOfTheVoid
+    WARNING: Illegal reflective access by demos.reflection.Reflector (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to field java.lang.String.value
+    WARNING: Please consider reporting this to the maintainers of demos.reflection.Reflector
     WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
     WARNING: All illegal access operations will be denied in a future release
 
