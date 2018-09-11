@@ -6,6 +6,7 @@ This branch is empty and serves as an index. Each time I gave the presentation, 
 
 # You're probably here because you saw me at:
 
+* [2018, Sep 12: JavaZone Oslo](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-09-12-javazone)
 * [2018, Jun 12: JBCNConf Barcelona](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-06-12-jbcnconf)
 * [2018, Apr 17: Utrecht JUG](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-04-17-utrecht-jug)
 * [2018, Jan 30: JVMCON](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-01-30-jvmcon)
