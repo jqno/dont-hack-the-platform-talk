@@ -7,13 +7,15 @@ controls: "false"
 center: "false"
 background-image: "images/background.jpg"
 ---
+# ಠ_ಠ
+
+---
+
 # Don't hack the platform? ☠️💣💥
 
 Jan Ouwens <br/>
 
 ![](images/logo-javazone.svg){ width='30%' }
----
-# ಠ_ಠ
 
 ---
 
