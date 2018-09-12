@@ -9,8 +9,6 @@ import static net.bytebuddy.matcher.ElementMatchers.named;
 
 public class TimeTraveling {
 
-    // To run on Java 11 EA: set `-Dnet.bytebuddy.experimental=true`
-
     public static void main(String... args) throws Exception {
 
         int i = 0;
