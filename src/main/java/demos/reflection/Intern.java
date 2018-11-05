@@ -6,12 +6,12 @@ import static demos.reflection.Reflector.setPrivateFieldValue;
 public class Intern {
     public static void main(String... args) throws Exception {
         var world = "Hello world!";
-        var hackers = "Hello hackers!";
+        var jfall = "Hello J-Fall!";
 
         System.out.println(world);
-        System.out.println(hackers);
+        System.out.println(jfall);
 
-        var newValue = getPrivateFieldValue(String.class, "value", hackers);
+        var newValue = getPrivateFieldValue(String.class, "value", jfall);
         setPrivateFieldValue(String.class, "value", world, newValue);
 
         System.out.println("---");
