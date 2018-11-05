@@ -115,7 +115,7 @@ Rating: ☠️💣
 
 # Emoji
 
-* Rating: 🎉
+Rating: 🎉
 
 
 # Hash-code
