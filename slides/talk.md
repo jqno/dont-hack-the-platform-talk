@@ -1,13 +1,17 @@
 ---
-author: Jan Ouwens
-title: Don't hack the platform? ☠️💣💥
-date: November 8, 2018
+pagetitle: Don't hack the platform? ☠️💣💥
 theme: moon
 transition: none
 progress: "false"
 controls: "false"
 center: "false"
 background-image: "images/background.jpg"
+---
+# Don't hack the platform? ☠️💣💥
+
+Jan Ouwens<br/>
+
+![](images/jfall.jpg){ style="border:2px solid red; width:15%;" }
 ---
 # ಠ_ಠ
 
@@ -21,7 +25,8 @@ Jan Ouwens
 
 ![](images/codestar.png)
 
-![](images/twitter.png) [jqno](https://twitter.com/jqno)
+![](images/twitter.png) [jqno](https://twitter.com/jqno)<br/>
+![](images/twitter.png) #JFall
 
 # EqualsVerifier
 
@@ -425,6 +430,15 @@ System.setSecurityManager(new SecurityManager());
 
 Maybe not at work though?
 
+# ☠️💣💥
+
+Please rate my talk in the official J-Fall app!
+
+<br/><br/><br/>
+
+...and don't forget to like and subscribe!
+
+
 # Questions?
 
 <br/><br/>
@@ -434,4 +448,6 @@ slides & code at<br/>
 
 I'm at<br/>
 ![](images/twitter.png) [jqno](https://twitter.com/jqno)
+
+#JFall
 
