@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Don’t hack the platform? ☠️💣💥</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  { color: #cccccc; background-color: #303030; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ffcfaf; } /* Alert */
+code span.an { color: #7f9f7f; font-weight: bold; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #dca3a3; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #f0dfaf; } /* ControlFlow */
+code span.ch { color: #dca3a3; } /* Char */
+code span.cn { color: #dca3a3; font-weight: bold; } /* Constant */
+code span.co { color: #7f9f7f; } /* Comment */
+code span.cv { color: #7f9f7f; font-weight: bold; } /* CommentVar */
+code span.do { color: #7f9f7f; } /* Documentation */
+code span.dt { color: #dfdfbf; } /* DataType */
+code span.dv { color: #dcdccc; } /* DecVal */
+code span.er { color: #c3bf9f; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #c0bed1; } /* Float */
+code span.fu { color: #efef8f; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #7f9f7f; font-weight: bold; } /* Information */
+code span.kw { color: #f0dfaf; } /* Keyword */
+code span.op { color: #f0efd0; } /* Operator */
+code span.ot { color: #efef8f; } /* Other */
+code span.pp { color: #ffcfaf; font-weight: bold; } /* Preprocessor */
+code span.sc { color: #dca3a3; } /* SpecialChar */
+code span.ss { color: #cc9393; } /* SpecialString */
+code span.st { color: #cc9393; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #cc9393; } /* VerbatimString */
+code span.wa { color: #7f9f7f; font-weight: bold; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="theme-modifications.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="dont-hack-the-platform" class="slide level1">
+<h1>Don’t hack the platform? ☠️💣💥</h1>
+<p>Jan Ouwens<br/></p>
+<h2 id="section"><img data-src="images/jfall.jpg" style="border:2px solid red; width:15%;" /></h2>
+</section>
+<section id="ಠ_ಠ" class="slide level1">
+<h1>ಠ_ಠ</h1>
+</section>
+<section class="slide level1">
+
+<p><img data-src="images/sombrero.jpg" style="float:right" height="800" /></p>
+<h1>
+About me 🤓
+</h1>
+<p>Jan Ouwens</p>
+<p><img data-src="images/codestar.png" /></p>
+<p><img data-src="images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a><br/> <img data-src="images/twitter.png" /> #JFall</p>
+</section>
+<section id="equalsverifier" class="slide level1">
+<h1>EqualsVerifier</h1>
+<p><br/></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" data-line-number="1">EqualsVerifier.<span class="fu">forClass</span>(Foo.<span class="fu">class</span>)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">              .<span class="fu">verify</span>();</a></code></pre></div>
+</section>
+<section id="about-this-talk" class="slide level1">
+<h1>About this talk</h1>
+</section>
+<section id="section-1" class="slide level1" data-background-image="images/accident.jpg">
+<h1></h1>
+</section>
+<section id="section-2" class="slide level1" data-background-image="images/evil.jpg">
+<h1></h1>
+</section>
+<section id="things-you-shouldnt-mess-with" class="slide level1">
+<h1>Things you shouldn’t mess with:</h1>
+<ul>
+<li>Language ‘features’</li>
+<li>Reflection</li>
+<li>Annotations</li>
+<li>External libraries</li>
+</ul>
+</section>
+<section id="ratings" class="slide level1">
+<h1>Ratings</h1>
+<ul>
+<li>☠️</li>
+<li>☠️💣</li>
+<li>☠️💣💥</li>
+</ul>
+</section>
+<section id="language-features" class="slide level1">
+<h1>☠️ Language ‘features’</h1>
+</section>
+<section id="true-lambda" class="slide level1">
+<h1>True Lambda</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="true-lambda-1" class="slide level1">
+<h1>True Lambda</h1>
+<p>Java 11!</p>
+</section>
+<section id="sidebar" class="slide level1">
+<h1>Sidebar</h1>
+<p>Also annoy your coworkers with</p>
+<ul>
+<li>Weird color scheme</li>
+<li>Nyancat plugin</li>
+<li>VIM plugin</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p><img data-src="images/zalgo.png" /></p>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="unicode-symbols" class="slide level1">
+<h1>Unicode symbols</h1>
+<ul>
+<li>Hard to type</li>
+<li>Hard to read</li>
+<li>Rating: ☠️</li>
+</ul>
+</section>
+<section id="false-is-true" class="slide level1">
+<h1>False is True</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="false-is-true-1" class="slide level1">
+<h1>False is True</h1>
+<blockquote>
+<p>Scala demo</p>
+</blockquote>
+</section>
+<section id="false-is-true-2" class="slide level1">
+<h1>False is True</h1>
+<blockquote>
+<p>Kotlin demo</p>
+</blockquote>
+</section>
+<section id="false-is-true-3" class="slide level1">
+<h1>False is True</h1>
+<p>Rating: ☠️💣</p>
+</section>
+<section id="unicode-converter" class="slide level1">
+<h1>Unicode converter</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="unicode-escapes" class="slide level1">
+<h1>Unicode escapes</h1>
+<ul>
+<li>Harder to type and read</li>
+<li>Maven says ¯\_(ツ)_/¯</li>
+<li>Rating: ☠️💣</li>
+</ul>
+</section>
+<section id="emoji" class="slide level1">
+<h1>Emoji</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="emoji-1" class="slide level1">
+<h1>Emoji</h1>
+<p>Rating: 🎉</p>
+</section>
+<section id="hash-code" class="slide level1">
+<h1>Hash-code</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="hash-code-1" class="slide level1">
+<h1>Hash-code</h1>
+<ul>
+<li>Fun when coworkers insist on hashCode as key</li>
+<li>Rating: ☠️</li>
+</ul>
+</section>
+<section id="hash-code-2" class="slide level1">
+<h1>Hash-code</h1>
+<p>However… <img data-src="images/rtlnieuws.png" /></p>
+</section>
+<section id="reflection" class="slide level1">
+<h1>☠️ Reflection</h1>
+</section>
+<section id="introducing-reflector" class="slide level1">
+<h1>Introducing: Reflector</h1>
+</section>
+<section id="loopy" class="slide level1">
+<h1>Loopy</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="loopy-1" class="slide level1">
+<h1>Loopy</h1>
+<p>Was this hack evil? ✋</p>
+<div class="fragment">
+<p>Are Calendars and arrays evil? ✋</p>
+</div>
+<div class="fragment">
+<p>Are JPA entities evil? 👹</p>
+</div>
+</section>
+<section id="loopy-2" class="slide level1">
+<h1>Loopy</h1>
+<p>Rating: ☠️💣💥</p>
+</section>
+<section id="interning" class="slide level1">
+<h1>Interning</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="oh-man" class="slide level1">
+<h1>Oh man 😒</h1>
+<pre><code>WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by demos.reflection.Reflector (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of demos.reflection.Reflector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release</code></pre>
+<div class="fragment">
+<p><code>--add-opens java.base/java.lang=ALL-UNNAMED</code></p>
+</div>
+</section>
+<section id="interning-1" class="slide level1">
+<h1>Interning</h1>
+<ul>
+<li>Fun way to mess up unit tests!</li>
+<li>Rating: ☠️💣</li>
+</ul>
+</section>
+<section id="dirty_class" class="slide level1">
+<h1>dirty_CLASS</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="you-should-probably" class="slide level1">
+<h1>You should probably</h1>
+<ul>
+<li>Call <code>close()</code> on <code>URLClassLoader</code></li>
+<li>Report compilation errors with <code>CompilationTask</code></li>
+<li>Handle exceptions</li>
+</ul>
+<div class="fragment">
+<p><br/> ¯\_(ツ)_/¯</p>
+</div>
+</section>
+<section id="multi-release-jar-file" class="slide level1">
+<h1>Multi-release JAR file</h1>
+</section>
+<section id="equalsverifier-1" class="slide level1">
+<h1>EqualsVerifier</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="at">@Test</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">equalsverifierSucceeds_whenOneOfTheFieldsIsSynthetic</span>() {</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">    <span class="kw">if</span> (!<span class="fu">isJava8Available</span>()) {</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">        <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">    }</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">    <span class="bu">Class</span>&lt;?&gt; java8ClassWithSyntheticField = <span class="fu">compile</span>(JAVA_<span class="dv">8</span>_CLASS_WITH_SYNTHETIC_FIELD_NAME, JAVA_<span class="dv">8</span>_CLASS_WITH_SYNTHETIC_FIELD);</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">    EqualsVerifier.<span class="fu">forClass</span>(java8ClassWithSyntheticField)</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">            .<span class="fu">verify</span>();</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">}</a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="kw">private</span> <span class="dt">static</span> <span class="dt">final</span> <span class="bu">String</span> JAVA_<span class="dv">8</span>_CLASS_WITH_SYNTHETIC_FIELD_NAME = <span class="st">&quot;Java8ClassWithSyntheticField&quot;</span>;</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="kw">private</span> <span class="dt">static</span> <span class="dt">final</span> <span class="bu">String</span> JAVA_<span class="dv">8</span>_CLASS_WITH_SYNTHETIC_FIELD =</a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">import java.util.Comparator;&quot;</span> +</a>
+<a class="sourceLine" id="cb3-15" data-line-number="15">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">import java.util.Objects;&quot;</span> +</a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span> +</a>
+<a class="sourceLine" id="cb3-17" data-line-number="17">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">public final class Java8ClassWithSyntheticField {&quot;</span> +</a>
+<a class="sourceLine" id="cb3-18" data-line-number="18">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    private static final Comparator&lt;Java8ClassWithSyntheticField&gt; COMPARATOR =&quot;</span> +</a>
+<a class="sourceLine" id="cb3-19" data-line-number="19">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">            (c1, c2) -&gt; 0;   // A lambda is a synthetic class&quot;</span> +</a>
+<a class="sourceLine" id="cb3-20" data-line-number="20">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span> +</a>
+<a class="sourceLine" id="cb3-21" data-line-number="21">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    private final String s;&quot;</span> +</a>
+<a class="sourceLine" id="cb3-22" data-line-number="22">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    &quot;</span> +</a>
+<a class="sourceLine" id="cb3-23" data-line-number="23">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    public Java8ClassWithSyntheticField(String s) {&quot;</span> +</a>
+<a class="sourceLine" id="cb3-24" data-line-number="24">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">        this.s = s;&quot;</span> +</a>
+<a class="sourceLine" id="cb3-25" data-line-number="25">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    }&quot;</span> +</a>
+<a class="sourceLine" id="cb3-26" data-line-number="26">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    &quot;</span> +</a>
+<a class="sourceLine" id="cb3-27" data-line-number="27">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    @Override&quot;</span> +</a>
+<a class="sourceLine" id="cb3-28" data-line-number="28">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    public boolean equals(Object obj) {&quot;</span> +</a>
+<a class="sourceLine" id="cb3-29" data-line-number="29">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">        if (!(obj instanceof Java8ClassWithSyntheticField)) {&quot;</span> +</a>
+<a class="sourceLine" id="cb3-30" data-line-number="30">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">            return false;&quot;</span> +</a>
+<a class="sourceLine" id="cb3-31" data-line-number="31">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">        }&quot;</span> +</a>
+<a class="sourceLine" id="cb3-32" data-line-number="32">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">        return Objects.equals(s, ((Java8ClassWithSyntheticField)obj).s);&quot;</span> +</a>
+<a class="sourceLine" id="cb3-33" data-line-number="33">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    }&quot;</span> +</a>
+<a class="sourceLine" id="cb3-34" data-line-number="34">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    &quot;</span> +</a>
+<a class="sourceLine" id="cb3-35" data-line-number="35">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    @Override&quot;</span> +</a>
+<a class="sourceLine" id="cb3-36" data-line-number="36">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    public int hashCode() {&quot;</span> +</a>
+<a class="sourceLine" id="cb3-37" data-line-number="37">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">        return Objects.hash(s);&quot;</span> +</a>
+<a class="sourceLine" id="cb3-38" data-line-number="38">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">    }&quot;</span> +</a>
+<a class="sourceLine" id="cb3-39" data-line-number="39">        <span class="st">&quot;</span><span class="sc">\n</span><span class="st">}&quot;</span>;</a></code></pre></div>
+</section>
+<section id="javacompiler" class="slide level1">
+<h1>JavaCompiler</h1>
+<p>Rating: ☠️💣💥</p>
+</section>
+<section id="annotations" class="slide level1">
+<h1>☠️ Annotations</h1>
+</section>
+<section id="lombok" class="slide level1">
+<h1>Lombok 🌶</h1>
+<p>use annotations</p>
+<p>to trick the Java <em><strong>compiler</strong></em></p>
+<p>into generating bytecode</p>
+<p>that does something else</p>
+</section>
+<section id="spring-hibernate" class="slide level1">
+<h1>Spring &amp; Hibernate</h1>
+<p>use annotations</p>
+<p>to trick the Java <em><strong>runtime</strong></em></p>
+<p>into generating bytecode</p>
+<p>that does something else</p>
+</section>
+<section id="section-3" class="slide level1" data-background-image="images/boring.jpg">
+<h1></h1>
+<p><br/><br/><br/><br/><br/></p>
+<h1>
+Boring
+</h1>
+</section>
+<section id="external-libraries" class="slide level1">
+<h1>☠️ External libraries</h1>
+<p><code>Objenesis</code></p>
+</section>
+<section id="constructors-are-tedious" class="slide level1">
+<h1>Constructors are tedious</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="constructors-are-tedious-1" class="slide level1">
+<h1>Constructors are tedious</h1>
+<p>Rating: ☠️</p>
+</section>
+<section id="singletons" class="slide level1">
+<h1>Singletons</h1>
+<p>“[An enum] provides an <strong>ironclad guarantee</strong> against multiple instantiation, even in the face of <strong>sophisticated serialization or reflection attacks</strong>. […] A single-element enum type is often the best way to implement a singleton.”</p>
+<p>– Joshua Bloch, Effective Java 2nd Edition</p>
+</section>
+<section id="singletons-1" class="slide level1">
+<h1>Singletons</h1>
+<p>“[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. […] A single-element enum type is often the best way to implement a singleton.”</p>
+<p>– Joshua Bloch, Effective Java <strong>3rd</strong> Edition</p>
+<div class="fragment">
+<p>😇</p>
+</div>
+</section>
+<section id="singletons-2" class="slide level1">
+<h1>Singletons</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="singletons-3" class="slide level1">
+<h1>Singletons</h1>
+<p>Rating: ☠️💣</p>
+</section>
+<section id="confusing-card-game" class="slide level1">
+<h1>Confusing card game</h1>
+</section>
+<section id="section-4" class="slide level1" data-background-image="images/tarot.jpg">
+<h1></h1>
+</section>
+<section id="confusing-card-game-1" class="slide level1">
+<h1>Confusing card game</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+</section>
+<section id="confusing-card-game-2" class="slide level1">
+<h1>Confusing card game</h1>
+<p>Rating: ☠️💣💥</p>
+</section>
+<section id="confusing-card-game-3" class="slide level1">
+<h1>Confusing card game</h1>
+<p><img data-src="images/trump.png" /></p>
+</section>
+<section id="external-libraries-1" class="slide level1">
+<h1>External libraries</h1>
+<p><code>ByteBuddy</code></p>
+<p>&amp;</p>
+<p><code>ByteBuddy Agent</code></p>
+</section>
+<section id="disclaimer" class="slide level1">
+<h1>Disclaimer</h1>
+<p>Use cases for agents</p>
+<ul>
+<li>there are many</li>
+<li>they’re legitimate</li>
+</ul>
+</section>
+<section id="time-traveling" class="slide level1">
+<h1>Time Traveling 🕙🕚</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<p><br/><br/> <br/><br/> Idea shamelessly stolen from<br/><img data-src="images/github.png" /> <a href="https://github.com/TOPdesk/time-transformer-agent">/TOPdesk/time-transformer-agent</a></p>
+</section>
+<section id="time-traveling-1" class="slide level1">
+<h1>Time Traveling 🕙🕚</h1>
+<ul>
+<li>Unit testing legacy code</li>
+<li>Messing up any code</li>
+<li>Rating: ☠️💣💥</li>
+</ul>
+</section>
+<section id="but-wait" class="slide level1">
+<h1>But wait</h1>
+<h2 id="theres-more">There’s more</h2>
+</section>
+<section id="victim-attack" class="slide level1">
+<h1>Victim / Attack</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<p><br/><br/></p>
+<pre><code>mvn clean package
+
+mvn exec:java -DmainClass=demos.libraries.remote.Attack -Darg0=target/dont-hack-the-platform-0.1-SNAPSHOT.jar -Darg1=???</code></pre>
+</section>
+<section id="victim-attack-1" class="slide level1">
+<h1>Victim / Attack</h1>
+Rating:
+<h1>
+😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱😱
+</h1>
+</section>
+<section id="section-5" class="slide level1">
+<h1>&lt;/&gt;</h1>
+</section>
+<section id="section-6" class="slide level1" data-background-image="images/ribbon.jpg">
+<h1></h1>
+<h1>
+Awareness
+</h1>
+</section>
+<section id="emoji-unicode" class="slide level1">
+<h1>Emoji &amp; unicode</h1>
+<ul>
+<li>Checkstyle</li>
+<li>SonarQube</li>
+</ul>
+</section>
+<section id="security-manager" class="slide level1">
+<h1>Security manager</h1>
+<blockquote>
+<p>Demo</p>
+</blockquote>
+<p><br/><br/></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="bu">System</span>.<span class="fu">setSecurityManager</span>(<span class="kw">new</span> <span class="bu">SecurityManager</span>());</a></code></pre></div>
+</section>
+<section id="security-manager-1" class="slide level1">
+<h1>Security manager</h1>
+<p><img data-src="images/no-spring.png" /></p>
+</section>
+<section id="modularisation" class="slide level1">
+<h1>Modularisation</h1>
+<pre><code>WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by demos.reflection.Reflector (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to field java.lang.String.value
+WARNING: Please consider reporting this to the maintainers of demos.reflection.Reflector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release</code></pre>
+<p><code>--illegal-access=deny</code></p>
+</section>
+<section id="do-try-this-at-home" class="slide level1">
+<h1>Do try this at home!</h1>
+<p>Maybe not at work though?</p>
+</section>
+<section id="section-7" class="slide level1">
+<h1>☠️💣💥</h1>
+<p>Please rate my talk in the official J-Fall app!</p>
+<p><br/><br/><br/></p>
+<p>…and don’t forget to like and subscribe!</p>
+</section>
+<section id="questions" class="slide level1">
+<h1>Questions?</h1>
+<p><br/><br/></p>
+<p>slides &amp; code at<br/> <img data-src="images/github.png" /><a href="https://github.com/jqno/dont-hack-the-platform-talk">/jqno/dont-hack-the-platform-talk</a></p>
+<p>I’m at<br/> <img data-src="images/twitter.png" /> <a href="https://twitter.com/jqno">jqno</a></p>
+<p>#JFall</p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+       // Parallax background image
+       parallaxBackgroundImage: 'images/background.jpg', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
