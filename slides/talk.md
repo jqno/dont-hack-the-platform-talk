@@ -1,5 +1,5 @@
 ---
-pagetitle: Don't hack the platform? ☠️💣💥
+pagetitle: Don't hack the JVM? ☠️💣💥
 theme: moon
 transition: none
 progress: "false"
@@ -7,7 +7,7 @@ controls: "false"
 center: "false"
 background-image: "images/background.jpg"
 ---
-# Don't hack the platform? ☠️💣💥
+# Don't hack the JVM? ☠️💣💥
 
 Jan Ouwens<br/>
 
