@@ -122,6 +122,14 @@ Rating: ☠️💣
 
 Rating: 🎉
 
+# Redacted by NLJUG
+
+![](images/jfall-program.jpg)
+
+. . .
+
+## ☠️💣💥
+
 
 # Hash-code
 
