@@ -13,15 +13,20 @@ background-image: "images/background.jpg"
 
 ---
 
-![](images/sombrero.jpg){ style="float:right" height=800px }
+<span style="float:right;height:500px;">
+<img src="images/anna.jpg"/><br>We hire only the best!
+</span>
 
-<h1>About me 🤓</h1>
+<h1>About me</h1>
 
 Jan Ouwens
 
+![](images/twitter.png) [jqno](https://twitter.com/jqno)
+
+<br><br>
+
 ![](images/codestar.png)
 
-![](images/twitter.png) [jqno](https://twitter.com/jqno)
 
 # EqualsVerifier
 
