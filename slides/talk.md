@@ -104,39 +104,6 @@ Also annoy your coworkers with
 
 Rating: ☠️💣
 
-# Unicode converter
-
-> Demo
-
-# Unicode escapes
-
-* Harder to type and read
-* Maven says ¯\\\_(ツ)\_/¯
-* Rating: ☠️💣
-
-# Emoji
-
-> Demo
-
-# Emoji
-
-Rating: 🎉
-
-
-# Hash-code
-
-> Demo
-
-# Hash-code
-
-* Fun when coworkers insist on hashCode as key
-* Rating: ☠️
-
-# Hash-code
-
-However...
-![](images/rtlnieuws.png)
-
 
 # ☠️ Reflection
 
