@@ -14,6 +14,7 @@ This branch is empty and serves as an index. Each time I gave the presentation, 
 
 # Otherwise, maybe you saw me at:
 
+* [2019, Feb 8: Clean Architecture with Uncle Bob](https://github.com/jqno/dont-hack-the-platform-talk/tree/2019-02-08-uncle-bob-utrecht)
 * [2018, May 29: Philips DigiLabs Meetup](http://github.com/jqno/dont-hack-the-platform-talk/tree/2018-05-29-philips)
 * [2018, May 17: ING Backend Guild](http://github.com/jqno/dont-hack-the-platform-talk/tree/2018-05-17-ing)
 * [2018, Apr 4: Ordina Code & Comedy](https://github.com/jqno/dont-hack-the-platform-talk/tree/2018-04-04-ordina-code-&-comedy)
