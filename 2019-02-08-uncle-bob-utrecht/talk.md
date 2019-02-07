@@ -23,9 +23,9 @@ Jan Ouwens
 
 ![](images/twitter.png) [jqno](https://twitter.com/jqno)
 
-<br><br>
+<br>
 
-![](images/codestar.png)
+Architect at<br>![](images/codestar.png)
 
 
 # EqualsVerifier
@@ -43,7 +43,30 @@ EqualsVerifier.forClass(Foo.class)
 
 # {data-background-image="images/evil.jpg"}
 
-# Things you shouldn't mess with:
+# {data-background-image="images/background.jpg"}
+
+<h1>The number one way to annoy your coworkers</h1>
+
+# {data-background-image="images/flowchart.jpg"}
+
+# {data-background-image="images/flowchart-blurred.jpg"}
+
+<h1>Become an architect</h1>
+
+. . .
+
+- "No time" to write code
+- Use PowerPoint and SharePoint
+- Hold long meetings
+- Don't let people who disagree slow you down
+
+<br><br><br>
+
+<small>(follow this advice and your influence and competence will correlate inversely 🎉)</small>
+
+# Otherwise
+
+Mess with
 
 - Language 'features'
 - Reflection
