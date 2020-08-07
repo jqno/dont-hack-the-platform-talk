@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class FalseIsTrue {
+public class FalseIsTrueTest {
     @Test
     public void falseIsTrue() {
         // This test passes!                                                                                     Move along, nothing to see here! ;-)                                       \u000A if (true) return;
