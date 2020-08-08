@@ -62,6 +62,10 @@ EqualsVerifier.forClass(Foo.class)
 
 Java 11!
 
+. . .
+
+In fact... Java 15!
+
 # Sidebar
 
 Also annoy your coworkers with
