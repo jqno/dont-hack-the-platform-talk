@@ -376,7 +376,7 @@ Idea shamelessly stolen from<br/>![](images/github.png) [/TOPdesk/time-transform
 ```
 mvn clean package
 
-mvn exec:java -DmainClass=demos.libraries.remote.Attack -Darg0=target/dont-hack-the-platform-0.1-SNAPSHOT.jar -Darg1=???
+runjava.py src/main/java/demos/libraries/remote/Attack.java target/dont-hack-the-platform-0.1-SNAPSHOT.jar ???
 ```
 
 # Victim / Attack
