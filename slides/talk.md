@@ -66,9 +66,8 @@ Java 11!
 
 Also annoy your coworkers with
 
+* Using Vim
 * Weird color scheme
-* Nyancat plugin
-* VIM plugin
 
 ---
 
