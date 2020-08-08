@@ -9,8 +9,8 @@
     <description>The code and slides for the talk of the same name</description>
 
     <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <encoding>UTF-8</encoding>
         <scala.version>2.12.6</scala.version>
         <kotlin.version>1.2.61</kotlin.version>

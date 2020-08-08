@@ -326,7 +326,10 @@ Rating: ☠️💣
 
 # Confusing card game
 
-Rating: ☠️💣💥
+Rating:
+
+Java 11: ☠️💣💥<br/>
+Java 12+: 🥳
 
 # Confusing card game
 
@@ -347,6 +350,15 @@ Use cases for agents
 
 * there are many
 * they're legitimate
+
+
+# Confusing card game - revisited
+
+> Demo
+
+# Confusing card game - revisited
+
+Rating: ☠️💣💥
 
 
 # Time Traveling 🕙🕚
