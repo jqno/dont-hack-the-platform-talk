@@ -64,7 +64,8 @@ Java 11!
 
 . . .
 
-In fact... Java 15!
+In fact... Java 15!<br/>
+Release date: tomorrow 🥳
 
 # Sidebar
 
