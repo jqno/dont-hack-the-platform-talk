@@ -79,6 +79,10 @@ Also annoy your coworkers with
 
 > Demo
 
+# Generics
+
+> Demo
+
 # Unicode symbols
 
 * Hard to type
