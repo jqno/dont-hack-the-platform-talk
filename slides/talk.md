@@ -1,6 +1,5 @@
 ---
-author: Jan Ouwens
-title: Don't hack the platform? ☠️💣💥
+pagetitle: Don't hack the platform? ☠️💣💥
 date: February 23, 2018
 theme: moon
 transition: none
@@ -8,6 +7,13 @@ progress: "false"
 controls: "false"
 center: "false"
 background-image: "images/background.jpg"
+---
+# Don't hack the platform? ☠️💣💥
+
+Jan Ouwens<br/>
+14 September 2020
+
+![](images/goto.jpg){ style="border:2px solid white;height:150px;" }
 ---
 # ಠ_ಠ
 
