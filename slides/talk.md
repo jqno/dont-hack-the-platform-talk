@@ -71,6 +71,7 @@ In fact... Java 17!
 Also annoy your coworkers with
 
 * Using Vim
+* Running Java from shell script
 * Weird color scheme
 
 ---
