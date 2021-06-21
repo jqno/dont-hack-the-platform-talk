@@ -64,7 +64,7 @@ Java 11!
 
 . . .
 
-In fact... Java 15!
+In fact... Java 17!
 
 # Sidebar
 
@@ -430,6 +430,14 @@ System.setSecurityManager(new SecurityManager());
 
 ![](images/no-spring.png)
 
+# Security manager
+
+Java 17: Deprecated
+
+. . .
+
+FOR REMOVAL
+
 # Modularisation
 
     WARNING: An illegal reflective access operation has occurred
@@ -439,6 +447,10 @@ System.setSecurityManager(new SecurityManager());
     WARNING: All illegal access operations will be denied in a future release
 
 `--illegal-access=deny`
+
+# Just be careful
+
+Who has access to PROD?
 
 # Do try this at home!
 
