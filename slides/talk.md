@@ -19,7 +19,7 @@ background-image: "images/background.jpg"
 
 Jan Ouwens
 
-![](images/codestar.png)
+![](images/yoink.png)
 
 ![](images/twitter.png) [jqno](https://twitter.com/jqno)
 
