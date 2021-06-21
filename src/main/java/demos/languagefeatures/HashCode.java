@@ -2,7 +2,7 @@ package demos.languagefeatures;
 
 public class HashCode {
     public static void main(String... args) {
-        String hello = "Hello world!";
+        String hello = "Hello mendix!";
         String another = stringWithSameHashCode(hello);
 
         System.out.println(hello);

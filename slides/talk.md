@@ -1,13 +1,19 @@
 ---
 author: Jan Ouwens
-title: Don't hack the platform? ☠️💣💥
-date: February 23, 2018
+title: Don't hack the JVM? ☠️💣💥
+date: July 2nd, 2021
 theme: moon
 transition: none
 progress: "false"
 controls: "false"
 center: "false"
-background-image: "images/background.jpg"
+---
+# Don't hack the platform? ☠️💣💥
+
+Jan Ouwens<br/>
+2 July 2021
+
+![](images/mendix.png){ style="height:150px;" }
 ---
 # ಠ_ಠ
 
