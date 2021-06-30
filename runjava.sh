@@ -2,10 +2,11 @@
 
 FILE="$1"
 # Removes src/main/java at the start, .java at the end, and replaces / with .
-CLASS="$(sed 's#src/main/java\/##; s/.java$//; s/\//./g' <<< "$FILE")"
+CLASS="$(sed 's#src/main/java\/##; s/.java$//; s/.scala$//; s/.kt//; s/\//./g' <<< "$FILE")"
 CLASSPATH_FILE=".runjava-classpath"
 TARGET="target/classes"
 CLASS_FILE="$TARGET/$(sed 's#src/main/java/##; s/.java$/.class/' <<< "$FILE")"
+EXTENSION=${FILE##*.}
 
 # Drop the first parameter
 shift
@@ -33,13 +34,28 @@ if [[ ! -e "$CLASSPATH_FILE" ]]; then
 fi
 CLASSPATH="$(cat $CLASSPATH_FILE)"
 
-# Compile if dirty
-SRC_STAT=$(stat -c %Y $FILE)
-TARGET_STAT=$(stat -c %Y $CLASS_FILE)
-if [[ $SRC_STAT > $TARGET_STAT ]]; then
-  echo "Dirty! compiling..."
-  javac -classpath $CLASSPATH -d $TARGET $FILE
-fi
 
-# Run the program!
-java -classpath $CLASSPATH $JVM_PARAMS $CLASS $APP_PARAMS
+if [[ "$EXTENSION" == "java" ]]; then
+  
+  # Compile if dirty
+  SRC_STAT=$(stat -c %Y $FILE)
+  TARGET_STAT=$(stat -c %Y $CLASS_FILE)
+  if [[ $SRC_STAT > $TARGET_STAT ]]; then
+    echo "Dirty! compiling..."
+    javac -classpath $CLASSPATH -d $TARGET $FILE
+  fi
+
+  # Run the program!
+  java -classpath $CLASSPATH $JVM_PARAMS $CLASS $APP_PARAMS
+
+elif [[ "$EXTENSION" == "scala" ]]; then
+
+  # Call Maven
+  mvn exec:java -Dexec.mainClass=$CLASS
+
+elif [[ "$EXTENSION" == "kt" ]]; then
+
+  # Call Maven
+  mvn exec:java -Dexec.mainClass=${CLASS}Kt
+
+fi
