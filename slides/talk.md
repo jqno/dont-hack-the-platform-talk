@@ -150,6 +150,18 @@ However...
 
 > Demo
 
+# Oh man 😒
+
+    Exception in thread "main" java.lang.reflect.InaccessibleObjectException: Unable to make field private final int java.lang.Integer.value accessible: module java.base does not "opens java.lang" to unnamed module @2a0a80c0
+
+. . .
+
+`--add-opens java.base/java.lang=ALL-UNNAMED --`
+
+# Loopy
+
+> Demo
+
 # Loopy
 
 Was this hack evil? ✋
@@ -170,18 +182,6 @@ Rating: ☠️💣💥
 # Interning
 
 > Demo
-
-# Oh man 😒
-
-    WARNING: An illegal reflective access operation has occurred
-    WARNING: Illegal reflective access by demos.reflection.Reflector (file:/Users/jqno/w/personal/dont-hack-the-platform-talk/target/classes/) to field java.lang.String.value
-    WARNING: Please consider reporting this to the maintainers of demos.reflection.Reflector
-    WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-    WARNING: All illegal access operations will be denied in a future release
-
-. . .
-
-`--add-opens java.base/java.lang=ALL-UNNAMED`
 
 # Interning
 
