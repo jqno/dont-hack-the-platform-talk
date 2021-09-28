@@ -1,6 +1,7 @@
 # Presentation files
 .runjava-classpath
 talk.html
+.vim
 
 # Eclipse files
 .metadata/
