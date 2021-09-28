@@ -301,13 +301,7 @@ Rating: ☠️
 
 "[An enum] provides an **ironclad guarantee** against multiple instantiation, even in the face of **sophisticated serialization or reflection attacks**. [...] A single-element enum type is often the best way to implement a singleton."
 
--- Joshua Bloch, Effective Java 2nd Edition
-
-# Singletons
-
-"[An enum] provides an ironclad guarantee against multiple instantiation, even in the face of sophisticated serialization or reflection attacks. [...] A single-element enum type is often the best way to implement a singleton."
-
--- Joshua Bloch, Effective Java **3rd** Edition
+-- Joshua Bloch, Effective Java 3rd Edition
 
 . . .
 
@@ -320,28 +314,6 @@ Rating: ☠️
 # Singletons
 
 Rating: ☠️💣
-
-
-# Confusing card game
-
----
-
-# {data-background-image="images/tarot.jpg"}
-
-# Confusing card game
-
-> Demo
-
-# Confusing card game
-
-Rating:
-
-Java 11: ☠️💣💥<br/>
-Java 12+: 🥳
-
-# Confusing card game
-
-![](images/trump.png)
 
 
 # External libraries
@@ -360,13 +332,23 @@ Use cases for agents
 * they're legitimate
 
 
-# Confusing card game - revisited
+# Confusing card game
+
+---
+
+# {data-background-image="images/tarot.jpg"}
+
+# Confusing card game
 
 > Demo
 
-# Confusing card game - revisited
+# Confusing card game
 
 Rating: ☠️💣💥
+
+# Confusing card game
+
+![](images/trump.png)
 
 
 # Time Traveling 🕙🕚

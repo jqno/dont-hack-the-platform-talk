@@ -1,15 +1,18 @@
 package demos.libraries;
 
+import net.bytebuddy.ByteBuddy;
+import net.bytebuddy.agent.ByteBuddyAgent;
+import net.bytebuddy.dynamic.loading.ClassReloadingStrategy;
+import net.bytebuddy.implementation.Implementation;
+import net.bytebuddy.implementation.MethodDelegation;
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
 
 import java.lang.reflect.Array;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
 
-import static demos.reflection.Reflector.getDeclaredField;
 import static demos.reflection.Reflector.setPrivateFieldValue;
+import static net.bytebuddy.matcher.ElementMatchers.*;
 
 public class ConfusingCardGame {
 
@@ -48,7 +51,7 @@ public class ConfusingCardGame {
 
         /* Get enum.values() */
         Method method = type.getDeclaredMethod("values");
-        Enum[] values = (Enum[])method.invoke(type);
+        E[] values = (E[]) method.invoke(type);
         int ordinal = values.length;
 
         /* Create new enum instance */
@@ -57,14 +60,25 @@ public class ConfusingCardGame {
         setPrivateFieldValue(Enum.class, "name", newInstance, constantName);
 
         /* Create values array with new constant */
-        Enum[] newValues = (Enum[])Array.newInstance(type, ordinal + 1);
+        E[] newValues = (E[]) Array.newInstance(type, ordinal + 1);
         System.arraycopy(values, 0, newValues, 0, ordinal);
         newValues[ordinal] = newInstance;
 
-        /* Replace old enum.values with new */
-        /* $VALUES is static final so we have to make it non-final first 😎 */
-        Field valuesField = getDeclaredField(type, "$VALUES");
-        setPrivateFieldValue(Field.class, "modifiers", valuesField, valuesField.getModifiers() & ~Modifier.FINAL);
-        valuesField.set(null, newValues);
+        /* Use Byte Buddy to intercept enum.values() */
+        ByteBuddyAgent.install();
+        Holder.values = (Suit[]) newValues;
+        new ByteBuddy()
+                .with(Implementation.Context.Disabled.Factory.INSTANCE)
+                .redefine(type)
+                .method(named("values"))
+                .intercept(MethodDelegation.to(Holder.class))
+                .make()
+                .load(type.getClassLoader(), ClassReloadingStrategy.fromInstalledAgent());
+    }
+
+    /* Create a place where we can store the new values */
+    static class Holder {
+        static Suit[] values;
+        static Suit[] intercept() { return values; }
     }
 }
