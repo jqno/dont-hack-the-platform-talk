@@ -6,7 +6,7 @@ import static demos.reflection.Reflector.setPrivateFieldValue;
 public class Intern {
     public static void main(String... args) throws Exception {
         var world = "Hello world!";
-        var hackers = "Hello hackers!";
+        var hackers = "Hello JAX!";
 
         System.out.println(world);
         System.out.println(hackers);

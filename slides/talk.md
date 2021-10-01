@@ -1,7 +1,7 @@
 ---
 author: Jan Ouwens
 title: Don't hack the platform? ☠️💣💥
-date: February 23, 2018
+date: JAX London - October 5, 2021
 theme: moon
 transition: none
 progress: "false"
