@@ -97,14 +97,6 @@ Also annoy your coworkers with
 
 # False is True
 
-> Scala demo
-
-# False is True
-
-> Kotlin demo
-
-# False is True
-
 Rating: ☠️💣
 
 # Unicode converter
@@ -116,14 +108,6 @@ Rating: ☠️💣
 * Harder to type and read
 * Maven says ¯\\\_(ツ)\_/¯
 * Rating: ☠️💣
-
-# Emoji
-
-> Demo
-
-# Emoji
-
-Rating: 🎉
 
 
 # Hash-code
